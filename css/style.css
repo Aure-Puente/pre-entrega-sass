@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+
+/* COLORES:
+#F2F2F2 blanco
+#ADB3B1 gris
+#272829 negro
+#EAC050 amarillo*/
+
+
+body{background-color: #F2F2F2 ;}
+
+
+/* --------HEADER---------- */
+
+/* Imágen de fondo */
+
+header{
+    background-color: #ADB3B1 ;
+    background-image: url(../assets/img/header.jpg);
+    height: 20rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Título */
+
+header h1{
+    color: #272829;
+    text-align: center;
+    font-size: 13.75rem;
+    font-family: 'Black Ops One', cursive;
+}
+
+/* Menú de navegación */
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-left: 100px}
+
+
+.nav-words{
+    text-decoration: none;
+    color: #272829;
+    font-size: 2.8125rem;
+    font-family: 'Black Ops One', cursive;
+    text-transform: uppercase;
+}
+/* ----------MAIN---------- */
+
+/* Barra de noticias en index*/
+
+.articulo{
+    background-color: #272829 ;
+    text-decoration: none;
+    height: 6.875rem;
+
+}
+article a{
+    text-decoration: none;
+    color: #EAC050;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3.125rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
+}
+
+/* Títulos de todas las pages*/
+
+.titulos{
+background-color: #272829;
+color: #F2F2F2;
+height: 6.875rem;
+text-align: center;
+font-size: 5rem;
+font-family: 'Black Ops One', cursive;
+letter-spacing: .625rem;
+}
+
+/* Contenido Inicio*/
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    margin-top: 3.125rem;
+    margin-left: 1.25rem;
+}
+
+.titulo-contenedor{
+    font-family: 'Black Ops One', cursive;
+    color: #272829;
+    text-align: center;
+    font-size: 5.625rem;
+    text-decoration: underline;
+}
+
+.contenedor div p{
+    font-family: 'Archivo Black', sans-serif;
+    color: #272829;
+    text-align: center;
+    font-size: 3.125rem
+}
+
+/* Contenido Productos */
+
+.productos{
+    margin-top: 2.5rem;
+}
+
+.merch-img{
+    width: 31.25rem;
+    height: 31.25rem;
+}
+
+.precio{
+    color: #272829;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3.125rem;
+
+}
+.form{
+    margin-top: 3.125rem;
+}
+
+.tipo-datos{
+    font-family: 'Archivo Black', sans-serif;
+    color: #272829;
+    text-align: center;
+    font-size: 2.8125rem;
+    margin-left: 1.25rem;
+}
+
+.datos{
+    font-family: 'Archivo Black', sans-serif;
+    color: #272829;
+    text-align: left;
+    font-size: 1.5625rem;
+    margin-top: 1.875rem;
+}
+
+
+/* Contenido Singles */
+
+.titulo-video{
+    font-family: 'Black Ops One', cursive;
+    color: #272829;
+    text-align: left;
+    font-size: 1.5625rem;
+    margin-top: 1.875rem;
+}
+
+.videos{
+    display: flex;
+    align-items: center;
+    margin-left: 1.25rem;
+}
+
+.texto-video{
+    font-family: 'Archivo Black', sans-serif;
+    color: #272829;
+    text-align: center;
+    font-size: 1.875rem;
+    margin-left: 1.25rem;
+}
+
+.spotify{
+    font-family: 'Archivo Black', sans-serif;
+    color: #272829;
+    text-align: left;
+    font-size: 2.8125rem;
+    margin-left: 1.25rem;
+    margin-top: 2.5rem;
+}
+
+/* Contenido Discografía */
+
+.discos{
+    display: flex;
+    margin-top: 2.5rem;
+    margin-left: 1.25rem;
+}
+
+.foto-discos{
+    width: 31.25rem;
+    height: 31.25rem;
+}
+
+.discos div h1{
+    font-family: 'Black Ops One', cursive;
+    color: #272829;
+    font-size: 2.5rem;
+    margin-left: 25rem}
+
+.discos div ul{
+    color: #272829;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.4375rem;
+    margin-left: 25rem;
+}
+
+/* Contenido Miembros */
+
+main section .foto-miembros{
+    width: 31.25rem;
+    height: 31.25rem;
+    border-radius:100px;
+}
+
+.miembros{
+    display: flex;
+    align-items: center;
+    margin-top: 3.125rem;
+    margin-left: 1.25rem;
+}
+
+.miembros div h1{
+    font-family: 'Black Ops One', cursive;
+    color: #272829;
+    text-align: center;
+    font-size: 3.125rem;
+}
+
+.miembros div p{
+    font-family: 'Archivo Black', sans-serif;
+    color: #272829;
+    text-align: center;
+    font-size: 1.875rem;
+    margin-left: 1.25rem;
+    }
+
+/* -----------------FOOTER---------------------- */
+
+footer{
+    background-color: #ADB3B1;
+    margin-top: 1.5625rem;
+    padding: 5rem;
+}
+
+.tamaño-logo{
+    width: 8rem;
+    height: 7rem;
+}
+
+.logos-redes{
+    display: flex;
+    justify-content: space-between;
+}
+
+    .nombre-logo{
+        font-family: 'Black Ops One', cursive;
+        color: black;
+        font-size: 1.25rem;
+    }
+    
+.logo-final{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-final img{
+    width: 15.625rem;
+    height: 15.625rem;
+    margin-top: 1.875rem;
+}
