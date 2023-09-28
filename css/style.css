@@ -113,21 +113,8 @@ padding-top: .625rem;
 
 /* Contenido Productos */
 
-.productos{
-    margin-top: 2.5rem;
-}
 
-.merch-img{
-    width: 31.25rem;
-    height: 31.25rem;
-}
 
-.precio{
-    color: #272829;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 3.125rem;
-
-}
 .form{
     margin-top: 3.125rem;
 }
