@@ -113,7 +113,24 @@ padding-top: .625rem;
 
 /* Contenido Productos */
 
+.merchandising{
+    display: flex;
+    background-color: #ADB3B1;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 2.1875rem;
+    padding-bottom: 2.1875rem;
+}
 
+.card{
+    border-width: .3125rem;
+    border-color: #272829;
+    border-style:groove;
+}
+
+.card-body{
+    font-family: 'Archivo Black', sans-serif;
+}
 
 .form{
     margin-top: 3.125rem;
