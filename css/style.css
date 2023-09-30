@@ -194,6 +194,14 @@ padding-top: .625rem;
     margin-left: 1.25rem;
 }
 
+.discos.gris{
+    background-color: #ADB3B1;
+}
+
+.discos.negro{
+    background-color: #272829;
+}
+
 .foto-discos{
     width: 31.25rem;
     height: 31.25rem;
@@ -210,6 +218,10 @@ padding-top: .625rem;
     font-family: 'Archivo Black', sans-serif;
     font-size: 1.4375rem;
     margin-left: 25rem;
+}
+
+#letrablanca{
+    color: #F2F2F2;
 }
 
 /* Contenido Miembros */
@@ -365,3 +377,5 @@ footer{
     height: 15.625rem;
     margin-top: 1.875rem;
 }
+
+/* ---------------MEDIA QUERIES---------------- */
