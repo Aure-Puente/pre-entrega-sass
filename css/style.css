@@ -19,38 +19,38 @@ body{background-color: #F2F2F2 ;}
 
 /* --------HEADER---------- */
 
-/* Imágen de fondo */
-
 header{
     background-color: #ADB3B1 ;
     background-image: url(../assets/img/header.jpg);
-    height: 20rem;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
-/* Título */
+nav img{
+    width: 46.875rem;
+    height: 15.625rem;
+    padding-left: 8.125rem;
+}
 
-header h1{
-    color: #272829;
-    text-align: center;
-    font-size: 13.75rem;
-    font-family: 'Black Ops One', cursive;
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* Menú de navegación */
 
 .navbar{
     display: flex;
-    justify-content: space-evenly;
+    gap: 1.25rem;
     list-style: none;
-    margin-left: 100px}
+}
 
 
 .nav-words{
     text-decoration: none;
     color: #272829;
-    font-size: 2.8125rem;
+    font-size: 2.1875rem;
     font-family: 'Black Ops One', cursive;
     text-transform: uppercase;
 }
@@ -194,14 +194,6 @@ padding-top: .625rem;
     margin-left: 1.25rem;
 }
 
-.discos.gris{
-    background-color: #ADB3B1;
-}
-
-.discos.negro{
-    background-color: #272829;
-}
-
 .foto-discos{
     width: 31.25rem;
     height: 31.25rem;
@@ -218,6 +210,18 @@ padding-top: .625rem;
     font-family: 'Archivo Black', sans-serif;
     font-size: 1.4375rem;
     margin-left: 25rem;
+}
+
+.discos.blanco{
+    background-color: #F2F2F2;
+}
+
+.discos.gris{
+    background-color: #ADB3B1;
+}
+
+.discos.negro{
+    background-color: #272829;
 }
 
 #letrablanca{
@@ -377,5 +381,3 @@ footer{
     height: 15.625rem;
     margin-top: 1.875rem;
 }
-
-/* ---------------MEDIA QUERIES---------------- */
