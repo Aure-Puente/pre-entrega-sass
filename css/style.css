@@ -24,6 +24,7 @@ header{
     background-image: url(../assets/img/header.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    width: 100%;
 }
 
 nav img{
@@ -34,6 +35,7 @@ nav img{
 
 header nav{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -42,6 +44,7 @@ header nav{
 
 .navbar{
     display: flex;
+    flex-wrap: wrap;
     gap: 1.25rem;
     list-style: none;
 }
@@ -61,17 +64,18 @@ header nav{
 .articulo{
     background-color: #272829 ;
     text-decoration: none;
-    height: 6.875rem;
-
+    height: 3.75rem;
+    width: 100%;
 }
+
 article a{
     text-decoration: none;
     color: #EAC050;
     font-family: 'Archivo Black', sans-serif;
-    font-size: 3.125rem;
+    font-size: 2.1875rem;
     display: flex;
     justify-content: center;
-    padding-top: 1.25rem;
+    padding-top: .3125rem;
 }
 
 /* Títulos de todas las pages*/
@@ -79,15 +83,19 @@ article a{
 .titulos{
 background-color: #272829;
 color: #F2F2F2;
-height: 6.875rem;
+height: 3.75rem;
 text-align: center;
-font-size: 5rem;
+font-size: 3.4375rem;
 font-family: 'Black Ops One', cursive;
-letter-spacing: .625rem;
-padding-top: .625rem;
+letter-spacing: .9375rem;
 }
 
 /* Contenido Inicio*/
+
+.grupo{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .contenedor{
     display: flex;
@@ -96,11 +104,15 @@ padding-top: .625rem;
     margin-left: 1.25rem;
 }
 
+.contenedor img{
+    width: 25rem;
+}
+
 .titulo-contenedor{
     font-family: 'Black Ops One', cursive;
     color: #272829;
     text-align: center;
-    font-size: 5.625rem;
+    font-size: 3.125rem;
     text-decoration: underline;
 }
 
@@ -108,7 +120,7 @@ padding-top: .625rem;
     font-family: 'Archivo Black', sans-serif;
     color: #272829;
     text-align: center;
-    font-size: 3.125rem
+    font-size: 1.875rem
 }
 
 /* Contenido Productos */
@@ -352,32 +364,34 @@ main section .foto-miembros{
 footer{
     background-color: #ADB3B1;
     margin-top: 1.5625rem;
-    padding: 5rem;
+    border-style: groove;
+    border-color: #272829;
+    width: 100%;
 }
 
 .tamaño-logo{
-    width: 8rem;
-    height: 7rem;
+    width: 5rem
 }
 
 .logos-redes{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: .9375rem;
 }
 
     .nombre-logo{
         font-family: 'Black Ops One', cursive;
         color: black;
-        font-size: 1.25rem;
+        font-size: .9375rem;
     }
     
 .logo-final{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .logo-final img{
-    width: 15.625rem;
-    height: 15.625rem;
-    margin-top: 1.875rem;
+    width: 9.375rem;
 }
