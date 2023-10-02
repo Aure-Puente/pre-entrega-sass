@@ -392,6 +392,8 @@ footer{
 
 /* ---------------MEDIA QUERIES--------------- */
 
+/* Responsive Index con Footer y Header*/
+
 @media (max-width: 1375px){
     .navbar{
         display: none;
@@ -492,5 +494,77 @@ footer{
     }
 }
 
+@media (max-width: 320px){
+    .titulo-contenedor{
+        font-size: 1.5625rem;
+    }
+    .contenedor a img{
+        width: 15.625rem;
+    }
+}
+
+
+/* Responsive Singles */
+
+@media (max-width: 1050px){
+    .titulo-video{
+        font-size:1.25rem;
+    }
+    .texto-video{
+        font-size: 1.5625rem;
+    }
+    .spotify{
+        font-size: 2.1875rem;
+    }
+}
+
+@media (max-width: 900px){
+    .texto-video{
+        display: none;
+    }
+    .videos{
+        margin-right: 1.25rem;
+    }
+}
+
+@media (max-width: 550px){
+    .titulo-video{
+        font-size: .9375rem;
+    }
+    .spotify{
+        display: none;
+    }
+    .titulos{
+        font-size: 2.1875rem;
+        height: 2.5rem;
+    }
+    .videos{
+        width: 25rem;
+    }
+    main div iframe{
+        margin-top: .3125rem;
+    }
+}
+
+@media (max-width: 440px){
+    .videos{
+        width: 14.375rem;
+    }
+}
+
+@media (max-width: 320px){
+    .titulos{
+        display: none;
+    }
+    .titulo-video{
+        font-size: .625rem ;
+    }
+    .spotify{
+        font-size: 1.25rem;
+    }
+    .videos{
+        margin-left: .5625rem;
+    }
+}
 
 
