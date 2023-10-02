@@ -80,14 +80,14 @@ article a{
 /* Títulos de todas las pages*/
 
 .titulos{
-background-color: #272829;
-color: #F2F2F2;
-height: 3.75rem;
-text-align: center;
-font-size: 3.4375rem;
-font-family: 'Black Ops One', cursive;
-letter-spacing: .9375rem;
-}
+    background-color: #272829;
+    color: #F2F2F2;
+    height: 3.75rem;
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+    font-size: 3.4375rem;
+    letter-spacing: .9375rem;
+    }
 
 /* Contenido Inicio*/
 
@@ -121,7 +121,6 @@ letter-spacing: .9375rem;
 
 .merchandising{
     display: flex;
-    background-color: #ADB3B1;
     justify-content: center;
     justify-content: space-evenly;
     padding-top: 2.1875rem;
@@ -132,6 +131,7 @@ letter-spacing: .9375rem;
     border-width: .3125rem;
     border-color: #272829;
     border-style:groove;
+    background-color: #ADB3B1;
 }
 
 .card-body{
@@ -146,18 +146,28 @@ letter-spacing: .9375rem;
     font-family: 'Archivo Black', sans-serif;
     color: #272829;
     text-align: center;
-    font-size: 2.8125rem;
+    font-size: 2.1875rem;
     margin-left: 1.25rem;
+    margin-top: 1.25rem;
 }
 
 .datos{
     font-family: 'Archivo Black', sans-serif;
     color: #272829;
     text-align: left;
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
     margin-top: 1.875rem;
 }
 
+.botmerch{
+    background-color: #272829;
+    padding: .3125rem;
+    color: #F2F2F2;
+    font-family: 'Archivo Black', sans-serif;
+    margin-top: 1.25rem;
+    border-radius: .625rem;
+    margin-left: 56.25rem;
+}
 
 /* Contenido Singles */
 
