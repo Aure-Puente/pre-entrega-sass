@@ -2,7 +2,7 @@
 
 ------------
 ## Flex Box:
-###Aplicado en header, Barra de navegación, page index, page merchandising,  page singles y page discografía.
+### Aplicado en header, Barra de navegación, page index, page merchandising,  page singles y page discografía.
 
 ## GRID:
 ### Aplicado en page miembros.
