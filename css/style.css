@@ -1,3 +1,538 @@
+@charset "UTF-8";
+/*VARIABLES*/
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/*BACKGROUND GENERAL*/
+body {
+  background-color: #F2F2F2;
+}
+
+/*---------------------HEADER--------------------*/
+header {
+  background-color: #ADB3B1;
+  background-image: url(../assets/img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logoheader {
+  width: 46.875rem;
+  height: 15.625rem;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.nav-words {
+  text-decoration: none;
+  color: #272829;
+  font-size: 2.1875rem;
+  font-family: "Black Ops One", cursive;
+  text-transform: uppercase;
+}
+
+/*------------------Barra Noticias Index-------------------*/
+.articulo {
+  background-color: #272829;
+  text-decoration: none;
+  height: 3.75rem;
+  width: 100%;
+}
+
+.noticia {
+  text-decoration: none;
+  color: #EAC050;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2.1875rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.3125rem;
+}
+
+/*------------Titulo de todas las Pages------------------------*/
+.titulos {
+  background-color: #272829;
+  color: #F2F2F2;
+  height: 3.75rem;
+  font-family: "Black Ops One", cursive;
+  text-align: center;
+  font-size: 3.4375rem;
+  letter-spacing: 0.9375rem;
+}
+
+/*---------------------Contenido Main----------------------------*/
+.contenedor {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5625rem;
+  margin-left: 1.25rem;
+}
+.contenedor a img {
+  width: 31.25rem;
+}
+.contenedor div p {
+  font-family: "Archivo Black", sans-serif;
+  color: #272829;
+  text-align: center;
+  font-size: 1.875rem;
+}
+
+.titulo-contenedor {
+  font-family: "Black Ops One", cursive;
+  color: #272829;
+  text-align: center;
+  font-size: 3.125rem;
+  text-decoration: underline;
+}
+
+/*------------------Contenido Productos-------------*/
+.merchandising {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding-top: 2.1875rem;
+  padding-bottom: 2.1875rem;
+}
+
+.card {
+  border-width: 0.3125rem;
+  border-color: #272829;
+  border-style: groove;
+  background-color: #ADB3B1;
+}
+
+.card-body {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.form {
+  margin-top: 3.125rem;
+}
+
+.tipo-datos {
+  font-family: "Archivo Black", sans-serif;
+  color: #272829;
+  text-align: center;
+  font-size: 2.1875rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.datos {
+  font-family: "Archivo Black", sans-serif;
+  color: #272829;
+  text-align: left;
+  font-size: 1.25rem;
+  margin-top: 1.875rem;
+}
+
+.botmerch {
+  background-color: #272829;
+  padding: 0.3125rem;
+  color: #F2F2F2;
+  font-family: "Archivo Black", sans-serif;
+  margin-top: 1.25rem;
+  border-radius: 0.625rem;
+  margin-left: 56.25rem;
+}
+
+/*----------------Contenido SIngles---------------*/
+.titulo-video {
+  font-family: "Black Ops One", cursive;
+  color: #272829;
+  text-align: left;
+  font-size: 1.5625rem;
+  margin-top: 1.875rem;
+}
+
+.videos {
+  display: flex;
+  align-items: center;
+  margin-left: 1.25rem;
+}
+
+.texto-video {
+  font-family: "Archivo Black", sans-serif;
+  color: #272829;
+  text-align: center;
+  font-size: 1.875rem;
+  margin-left: 1.25rem;
+}
+
+.spotify {
+  font-family: "Archivo Black", sans-serif;
+  color: #272829;
+  text-align: left;
+  font-size: 2.8125rem;
+  margin-left: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+/*-----------------Contenido Discografía----------------*/
+.discos {
+  display: flex;
+  margin-top: 2.5rem;
+  margin-left: 1.25rem;
+}
+.discos div h1 {
+  font-family: "Black Ops One", cursive;
+  color: #272829;
+  font-size: 2.5rem;
+  margin-left: 25rem;
+}
+.discos div ul {
+  color: #272829;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.4375rem;
+  margin-left: 25rem;
+}
+
+.foto-discos {
+  width: 31.25rem;
+  height: 31.25rem;
+}
+
+.discos.blanco {
+  background-color: #F2F2F2;
+}
+
+.discos.gris {
+  background-color: #ADB3B1;
+}
+
+.discos.negro {
+  background-color: #272829;
+}
+
+#letrablanca {
+  color: #F2F2F2;
+}
+
+/*--------------Contenido Miembros-----------------*/
+.foto-miembros {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+.miembros {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: repeat(6, 37.5rem);
+  grid-template-areas: "zona1 zona2 zona2 zona2" "zona3 zona3 zona3 zona4" "zona5 zona6 zona6 zona6" "zona7 zona7 zona7 zona8" "zona9 zona10 zona10 zona10" "zona11 zona11 zona11 zona12";
+}
+.miembros div {
+  text-align: center;
+}
+.miembros div h1 {
+  font-family: "Black Ops One", cursive;
+  color: #272829;
+  font-size: 3.125rem;
+}
+.miembros div p {
+  font-family: "Archivo Black", sans-serif;
+  color: #272829;
+  font-size: 1.875rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.miembros div button {
+  margin-top: 2.8125rem;
+}
+.miembros div button a {
+  background-color: #EAC050;
+  color: #272829;
+  font-family: "Archivo Black", sans-serif;
+  padding: 0.9375rem 0.9375rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  border-width: 0.3125rem;
+  border-color: #272829;
+  border-style: groove;
+  border-radius: 0.625rem;
+}
+
+.fotochester {
+  grid-area: zona1;
+  background-color: #F2F2F2;
+}
+
+.biochester {
+  grid-area: zona2;
+  background-color: #F2F2F2;
+}
+
+.fotomike {
+  grid-area: zona4;
+  background-color: #ADB3B1;
+}
+
+.biomike {
+  grid-area: zona3;
+  background-color: #ADB3B1;
+}
+
+.fotobrad {
+  grid-area: zona5;
+  background-color: #272829;
+}
+
+.biobrad {
+  grid-area: zona6;
+  background-color: #272829;
+}
+
+.fotorob {
+  grid-area: zona8;
+  background-color: #F2F2F2;
+}
+
+.biorob {
+  grid-area: zona7;
+  background-color: #F2F2F2;
+}
+
+.fotomr {
+  grid-area: zona9;
+  background-color: #ADB3B1;
+}
+
+.biomr {
+  grid-area: zona10;
+  background-color: #ADB3B1;
+}
+
+.fotophoenix {
+  grid-area: zona12;
+  background-color: #272829;
+}
+
+.biophoenix {
+  grid-area: zona11;
+  background-color: #272829;
+}
+
+#colorblanco h1 {
+  color: #F2F2F2;
+}
+#colorblanco p {
+  color: #F2F2F2;
+}
+
+/*--------------------------Media Queries-----------------------*/
+/*Responsive Barra de navegación, Footer e Index*/
+@media (max-width: 1375px) {
+  .navbar {
+    display: none;
+  }
+  .titulo-contenedor {
+    background-color: #272829;
+    color: #EAC050;
+  }
+}
+@media (max-width: 1040px) {
+  .noticia {
+    font-size: 1.875rem;
+  }
+}
+.titulo-contenedor {
+  font-size: 2.8125rem;
+}
+
+.contenedor a img {
+  width: 25rem;
+}
+.contenedor div p {
+  font-size: 1.5625rem;
+}
+
+@media (max-width: 870px) {
+  .logoheader {
+    width: 37.5rem;
+    height: 9.375rem;
+  }
+  article a {
+    font-size: 1.5625rem;
+    padding-top: 0.625rem;
+  }
+  .contenedor {
+    flex-direction: column-reverse;
+  }
+  .contenedor a img {
+    width: 31.25rem;
+  }
+  .contenedor div p {
+    display: none;
+  }
+  .titulo-contenedor {
+    margin-bottom: 0.3125rem;
+    font-size: 3.4375rem;
+  }
+  .nombre-logo {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .logoheader {
+    width: 25rem;
+    height: 6.25rem;
+  }
+  article {
+    display: none;
+  }
+  header {
+    border-style: groove;
+    border-color: #272829;
+  }
+  .titulo-contenedor {
+    font-size: 2.8125rem;
+  }
+  .contenedor a img {
+    width: 25rem;
+  }
+  .tamaño-logo {
+    width: 4.0625rem;
+  }
+  .logo-final img {
+    width: 6.875rem;
+  }
+}
+@media (max-width: 450px) {
+  .logoheader {
+    width: 15.625rem;
+    height: 4.375rem;
+  }
+  .titulo-contenedor {
+    font-size: 2.1875rem;
+  }
+  .contenedor a img {
+    width: 18.75rem;
+  }
+}
+@media (max-width: 360px) {
+  .titulo-contenedor {
+    font-size: 1.875rem;
+  }
+  .contenedor a img {
+    width: 17.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .titulo-contenedor {
+    font-size: 1.5625rem;
+  }
+  .contenedor a img {
+    width: 15.625rem;
+  }
+}
+/* Responsive Singles */
+@media (max-width: 1050px) {
+  .titulo-video {
+    font-size: 1.25rem;
+  }
+  .texto-video {
+    font-size: 1.5625rem;
+  }
+  .spotify {
+    font-size: 2.1875rem;
+  }
+}
+@media (max-width: 900px) {
+  .texto-video {
+    display: none;
+  }
+  .videos {
+    margin-right: 1.25rem;
+  }
+}
+@media (max-width: 550px) {
+  .titulo-video {
+    font-size: 0.9375rem;
+  }
+  .spotify {
+    display: none;
+  }
+  .titulos {
+    font-size: 2.1875rem;
+    height: 2.5rem;
+  }
+  .videos {
+    width: 25rem;
+  }
+  main div iframe {
+    margin-top: 0.3125rem;
+  }
+}
+@media (max-width: 440px) {
+  .videos {
+    width: 14.375rem;
+  }
+}
+@media (max-width: 320px) {
+  .titulos {
+    display: none;
+  }
+  .titulo-video {
+    font-size: 0.625rem;
+  }
+  .spotify {
+    font-size: 1.25rem;
+  }
+  .videos {
+    margin-left: 0.5625rem;
+  }
+}
+/*-----------------FOOTER------------------------------*/
+footer {
+  background-color: #ADB3B1;
+  margin-top: 1.5625rem;
+  border-style: groove;
+  border-color: #272829;
+  width: 100%;
+}
+
+.tamaño-logo {
+  width: 5rem;
+}
+
+.logos-redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 0.9375rem;
+}
+
+.nombre-logo {
+  font-family: "Black Ops One", cursive;
+  color: #272829;
+  font-size: 0.9375rem;
+}
+
+.logo-final {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo-final img {
+  width: 9.375rem;
+}
 
 /*# sourceMappingURL=style.css.map */
