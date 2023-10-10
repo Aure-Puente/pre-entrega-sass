@@ -1,0 +1,28 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5625rem;
+    margin-left: 1.25rem;
+    a{
+        img{
+            width: 31.25rem;
+        }
+    }
+    div{
+        p{
+            font-family: 'Archivo Black', sans-serif;
+            color: $negro;
+            text-align: center;
+            font-size: 1.875rem
+        }
+    }
+}
+
+.titulo-contenedor{
+    font-family: 'Black Ops One', cursive;
+    color: #272829;
+    text-align: center;
+    font-size: 3.125rem;
+    text-decoration: underline;
+}
+

@@ -1,0 +1,18 @@
+header{
+    background-color: $gris;
+    background-image: url(../assets/img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+.logoheader{
+        width: 46.875rem;
+        height: 15.625rem;
+}

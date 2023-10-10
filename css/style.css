@@ -1,5 +1,7 @@
 @charset "UTF-8";
+/*--------------------------UTILITIES-------------------------*/
 /*VARIABLES*/
+/*-----------------------BASE---------------------------*/
 /*RESET*/
 * {
   margin: 0;
@@ -7,12 +9,9 @@
   box-sizing: border-box;
 }
 
-/*BACKGROUND GENERAL*/
-body {
-  background-color: #F2F2F2;
-}
-
-/*---------------------HEADER--------------------*/
+/*Tipografía*/
+/*------------------LAYOUT----------------------*/
+/*Header*/
 header {
   background-color: #ADB3B1;
   background-image: url(../assets/img/header.jpg);
@@ -32,6 +31,7 @@ header nav {
   height: 15.625rem;
 }
 
+/*Barra de Navegación*/
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +47,7 @@ header nav {
   text-transform: uppercase;
 }
 
-/*------------------Barra Noticias Index-------------------*/
+/*Artículo*/
 .articulo {
   background-color: #272829;
   text-decoration: none;
@@ -65,7 +65,7 @@ header nav {
   padding-top: 0.3125rem;
 }
 
-/*------------Titulo de todas las Pages------------------------*/
+/*Títulos de Pages*/
 .titulos {
   background-color: #272829;
   color: #F2F2F2;
@@ -76,7 +76,12 @@ header nav {
   letter-spacing: 0.9375rem;
 }
 
-/*---------------------Contenido Main----------------------------*/
+/*Color Background de todas las Pages*/
+body {
+  background-color: #F2F2F2;
+}
+
+/*Main del Index*/
 .contenedor {
   display: flex;
   align-items: center;
@@ -101,7 +106,7 @@ header nav {
   text-decoration: underline;
 }
 
-/*------------------Contenido Productos-------------*/
+/*Contenido Productos*/
 .merchandising {
   display: flex;
   justify-content: center;
@@ -110,17 +115,7 @@ header nav {
   padding-bottom: 2.1875rem;
 }
 
-.card {
-  border-width: 0.3125rem;
-  border-color: #272829;
-  border-style: groove;
-  background-color: #ADB3B1;
-}
-
-.card-body {
-  font-family: "Archivo Black", sans-serif;
-}
-
+/*Formulario en Productos*/
 .form {
   margin-top: 3.125rem;
 }
@@ -152,7 +147,7 @@ header nav {
   margin-left: 56.25rem;
 }
 
-/*----------------Contenido SIngles---------------*/
+/*Main de Singles*/
 .titulo-video {
   font-family: "Black Ops One", cursive;
   color: #272829;
@@ -184,7 +179,7 @@ header nav {
   margin-top: 2.5rem;
 }
 
-/*-----------------Contenido Discografía----------------*/
+/*Main Discografía*/
 .discos {
   display: flex;
   margin-top: 2.5rem;
@@ -224,7 +219,7 @@ header nav {
   color: #F2F2F2;
 }
 
-/*--------------Contenido Miembros-----------------*/
+/*Main Miembros*/
 .foto-miembros {
   width: 100%;
   height: 100%;
@@ -336,8 +331,57 @@ header nav {
   color: #F2F2F2;
 }
 
-/*--------------------------Media Queries-----------------------*/
-/*Responsive Barra de navegación, Footer e Index*/
+/*Footer*/
+footer {
+  background-color: #ADB3B1;
+  margin-top: 1.5625rem;
+  border-style: groove;
+  border-color: #272829;
+  width: 100%;
+}
+
+.tamaño-logo {
+  width: 5rem;
+}
+
+.logos-redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 0.9375rem;
+}
+
+.nombre-logo {
+  font-family: "Black Ops One", cursive;
+  color: #272829;
+  font-size: 0.9375rem;
+}
+
+.logo-final {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo-final img {
+  width: 9.375rem;
+}
+
+/*--------------------COMPONENT------------------*/
+/*Cards con Bootstrap en Productos*/
+.card {
+  border-width: 0.3125rem;
+  border-color: #272829;
+  border-style: groove;
+  background-color: #ADB3B1;
+}
+
+.card-body {
+  font-family: "Archivo Black", sans-serif;
+}
+
+/*-----------------MEDIA QUERIES-------------------*/
+/*Generales*/
 @media (max-width: 1375px) {
   .navbar {
     display: none;
@@ -498,41 +542,6 @@ header nav {
   .videos {
     margin-left: 0.5625rem;
   }
-}
-/*-----------------FOOTER------------------------------*/
-footer {
-  background-color: #ADB3B1;
-  margin-top: 1.5625rem;
-  border-style: groove;
-  border-color: #272829;
-  width: 100%;
-}
-
-.tamaño-logo {
-  width: 5rem;
-}
-
-.logos-redes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-top: 0.9375rem;
-}
-
-.nombre-logo {
-  font-family: "Black Ops One", cursive;
-  color: #272829;
-  font-size: 0.9375rem;
-}
-
-.logo-final {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.logo-final img {
-  width: 9.375rem;
 }
 
 /*# sourceMappingURL=style.css.map */

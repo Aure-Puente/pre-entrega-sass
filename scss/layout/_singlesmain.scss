@@ -1,0 +1,30 @@
+.titulo-video{
+    font-family: 'Black Ops One', cursive;
+    color: $negro;
+    text-align: left;
+    font-size: 1.5625rem;
+    margin-top: 1.875rem;
+}
+
+.videos{
+    display: flex;
+    align-items: center;
+    margin-left: 1.25rem;
+}
+
+.texto-video{
+    font-family: 'Archivo Black', sans-serif;
+    color: $negro;
+    text-align: center;
+    font-size: 1.875rem;
+    margin-left: 1.25rem;
+}
+
+.spotify{
+    font-family: 'Archivo Black', sans-serif;
+    color: $negro;
+    text-align: left;
+    font-size: 2.8125rem;
+    margin-left: 1.25rem;
+    margin-top: 2.5rem;
+}

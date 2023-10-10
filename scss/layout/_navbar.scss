@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    list-style: none;
+}
+
+.nav-words{
+    text-decoration: none;
+    color: $negro;
+    font-size: 2.1875rem;
+    font-family: 'Black Ops One', cursive;
+    text-transform: uppercase;
+}
