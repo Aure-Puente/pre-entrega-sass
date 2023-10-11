@@ -14,25 +14,25 @@
     .noticia{
         font-size: 1.875rem;
     }
-}
 
-.titulo-contenedor{
-    font-size: 2.8125rem ;
-}
 
-.contenedor{
-    a{
-        img{
+    .titulo-contenedor{
+        font-size: 2.8125rem ;
+    }
+
+    .contenedor{
+        a{
+            img{
             width: 25rem;
+            }
         }
-    }
-    div{
-        p{
-            font-size: 1.5625rem ;
+        div{
+            p{
+                font-size: 1.5625rem ;
+            }
         }
     }
 }
-
 
 @media (max-width: 870px){
     .logoheader{
@@ -40,11 +40,9 @@
         height: 9.375rem;
     }
     
-    article{
-        a{
-            font-size: 1.5625rem;
-            padding-top: .625rem;
-        }
+    .noticia{
+        font-size: 1.5625rem;
+        padding-top: .625rem;
     }
 
     .contenedor{

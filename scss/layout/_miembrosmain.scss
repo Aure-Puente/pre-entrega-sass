@@ -8,7 +8,7 @@
     margin-top: 1.25rem;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: repeat(6, 37.5rem);
+    grid-template-rows: repeat(6, 31.25rem);
     grid-template-areas: 
     "zona1 zona2 zona2 zona2"
     "zona3 zona3 zona3 zona4"
@@ -19,14 +19,12 @@
     div{
         text-align: center;
         h1{
-            font-family: 'Black Ops One', cursive;
-            color: $negro;
-            font-size: 3.125rem;
+            @include typo;
         }
         p{
             font-family: 'Archivo Black', sans-serif;
             color: $negro;
-            font-size: 1.875rem;
+            font-size: 1.5625rem;
             padding-left: 1.25rem;
             padding-right: 1.25rem;
         }

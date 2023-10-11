@@ -1,12 +1,8 @@
-.discos{
-    display: flex;
-    margin-top: 2.5rem;
-    margin-left: 1.25rem;
+.disco-blanco{
+    @include flex;
     div{
         h1{
-            font-family: 'Black Ops One', cursive;
-            color: $negro;
-            font-size: 2.5rem;
+            @include typo;
             margin-left: 25rem
         }
         ul{
@@ -18,23 +14,40 @@
     }
 }
 
+.disco-gris{
+    @extend .disco-blanco;
+    background-color: $gris;
+}
+
+.disco-negro{
+    @extend .disco-blanco;
+        background-color: $negro;
+        div{
+            h1{
+                color: $blanco;
+            }
+            ul{
+                color: $blanco;
+            }
+        }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .foto-discos{
     width: 31.25rem;
     height: 31.25rem;
-}
-
-.discos.blanco{
-    background-color: #F2F2F2;
-}
-
-.discos.gris{
-    background-color: #ADB3B1;
-}
-
-.discos.negro{
-    background-color: #272829;
-}
-
-#letrablanca{
-    color: #F2F2F2;
 }

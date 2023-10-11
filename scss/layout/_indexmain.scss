@@ -1,8 +1,5 @@
 .contenedor{
-    display: flex;
-    align-items: center;
-    margin-top: 1.5625rem;
-    margin-left: 1.25rem;
+@include flex;
     a{
         img{
             width: 31.25rem;
@@ -25,4 +22,26 @@
     font-size: 3.125rem;
     text-decoration: underline;
 }
+
+.contenedor-gris{
+    @extend .contenedor;
+    background-color: $gris;
+}
+
+.contenedor-negro{
+    @extend .contenedor;
+    background-color: $negro;
+    div{
+        a{
+            h1{
+                color: $blanco;
+            }
+        }
+        p{
+            color: $blanco;
+        }
+    }
+}
+
+
 

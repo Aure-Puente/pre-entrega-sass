@@ -1,15 +1,15 @@
 @charset "UTF-8";
 /*--------------------------UTILITIES-------------------------*/
-/*VARIABLES*/
+/*Variables*/
+/*Mixins*/
 /*-----------------------BASE---------------------------*/
-/*RESET*/
+/*Reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*Tipografía*/
 /*------------------LAYOUT----------------------*/
 /*Header*/
 header {
@@ -82,16 +82,16 @@ body {
 }
 
 /*Main del Index*/
-.contenedor {
+.contenedor, .contenedor-negro, .contenedor-gris {
   display: flex;
   align-items: center;
   margin-top: 1.5625rem;
   margin-left: 1.25rem;
 }
-.contenedor a img {
+.contenedor a img, .contenedor-negro a img, .contenedor-gris a img {
   width: 31.25rem;
 }
-.contenedor div p {
+.contenedor div p, .contenedor-negro div p, .contenedor-gris div p {
   font-family: "Archivo Black", sans-serif;
   color: #272829;
   text-align: center;
@@ -104,6 +104,20 @@ body {
   text-align: center;
   font-size: 3.125rem;
   text-decoration: underline;
+}
+
+.contenedor-gris {
+  background-color: #ADB3B1;
+}
+
+.contenedor-negro {
+  background-color: #272829;
+}
+.contenedor-negro div a h1 {
+  color: #F2F2F2;
+}
+.contenedor-negro div p {
+  color: #F2F2F2;
 }
 
 /*Contenido Productos*/
@@ -159,6 +173,7 @@ body {
 .videos {
   display: flex;
   align-items: center;
+  margin-top: 1.5625rem;
   margin-left: 1.25rem;
 }
 
@@ -173,50 +188,49 @@ body {
 .spotify {
   font-family: "Archivo Black", sans-serif;
   color: #272829;
+  font-size: 2.5rem;
   text-align: left;
-  font-size: 2.8125rem;
   margin-left: 1.25rem;
   margin-top: 2.5rem;
 }
 
 /*Main Discografía*/
-.discos {
+.disco-blanco, .disco-negro, .disco-gris {
   display: flex;
-  margin-top: 2.5rem;
+  align-items: center;
+  margin-top: 1.5625rem;
   margin-left: 1.25rem;
 }
-.discos div h1 {
-  font-family: "Black Ops One", cursive;
+.disco-blanco div h1, .disco-negro div h1, .disco-gris div h1 {
+  font-family: "Archivo Black", sans-serif;
   color: #272829;
   font-size: 2.5rem;
   margin-left: 25rem;
 }
-.discos div ul {
+.disco-blanco div ul, .disco-negro div ul, .disco-gris div ul {
   color: #272829;
   font-family: "Archivo Black", sans-serif;
   font-size: 1.4375rem;
   margin-left: 25rem;
 }
 
-.foto-discos {
-  width: 31.25rem;
-  height: 31.25rem;
-}
-
-.discos.blanco {
-  background-color: #F2F2F2;
-}
-
-.discos.gris {
+.disco-gris {
   background-color: #ADB3B1;
 }
 
-.discos.negro {
+.disco-negro {
   background-color: #272829;
 }
-
-#letrablanca {
+.disco-negro div h1 {
   color: #F2F2F2;
+}
+.disco-negro div ul {
+  color: #F2F2F2;
+}
+
+.foto-discos {
+  width: 31.25rem;
+  height: 31.25rem;
 }
 
 /*Main Miembros*/
@@ -230,21 +244,21 @@ body {
   margin-top: 1.25rem;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: repeat(6, 37.5rem);
+  grid-template-rows: repeat(6, 31.25rem);
   grid-template-areas: "zona1 zona2 zona2 zona2" "zona3 zona3 zona3 zona4" "zona5 zona6 zona6 zona6" "zona7 zona7 zona7 zona8" "zona9 zona10 zona10 zona10" "zona11 zona11 zona11 zona12";
 }
 .miembros div {
   text-align: center;
 }
 .miembros div h1 {
-  font-family: "Black Ops One", cursive;
+  font-family: "Archivo Black", sans-serif;
   color: #272829;
-  font-size: 3.125rem;
+  font-size: 2.5rem;
 }
 .miembros div p {
   font-family: "Archivo Black", sans-serif;
   color: #272829;
-  font-size: 1.875rem;
+  font-size: 1.5625rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
@@ -395,34 +409,32 @@ footer {
   .noticia {
     font-size: 1.875rem;
   }
+  .titulo-contenedor {
+    font-size: 2.8125rem;
+  }
+  .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
+    width: 25rem;
+  }
+  .contenedor div p, .contenedor-gris div p, .contenedor-negro div p {
+    font-size: 1.5625rem;
+  }
 }
-.titulo-contenedor {
-  font-size: 2.8125rem;
-}
-
-.contenedor a img {
-  width: 25rem;
-}
-.contenedor div p {
-  font-size: 1.5625rem;
-}
-
 @media (max-width: 870px) {
   .logoheader {
     width: 37.5rem;
     height: 9.375rem;
   }
-  article a {
+  .noticia {
     font-size: 1.5625rem;
     padding-top: 0.625rem;
   }
-  .contenedor {
+  .contenedor, .contenedor-gris, .contenedor-negro {
     flex-direction: column-reverse;
   }
-  .contenedor a img {
+  .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
     width: 31.25rem;
   }
-  .contenedor div p {
+  .contenedor div p, .contenedor-gris div p, .contenedor-negro div p {
     display: none;
   }
   .titulo-contenedor {
@@ -448,7 +460,7 @@ footer {
   .titulo-contenedor {
     font-size: 2.8125rem;
   }
-  .contenedor a img {
+  .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
     width: 25rem;
   }
   .tamaño-logo {
@@ -466,7 +478,7 @@ footer {
   .titulo-contenedor {
     font-size: 2.1875rem;
   }
-  .contenedor a img {
+  .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
     width: 18.75rem;
   }
 }
@@ -474,7 +486,7 @@ footer {
   .titulo-contenedor {
     font-size: 1.875rem;
   }
-  .contenedor a img {
+  .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
     width: 17.5rem;
   }
 }
@@ -482,7 +494,7 @@ footer {
   .titulo-contenedor {
     font-size: 1.5625rem;
   }
-  .contenedor a img {
+  .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
     width: 15.625rem;
   }
 }

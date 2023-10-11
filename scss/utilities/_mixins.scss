@@ -1,0 +1,12 @@
+@mixin flex{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5625rem;
+    margin-left: 1.25rem;
+}
+
+@mixin typo{
+    font-family: 'Archivo Black', sans-serif;
+    color: $negro;
+    font-size: 2.5rem;
+}
