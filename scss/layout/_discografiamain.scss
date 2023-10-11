@@ -16,12 +16,12 @@
 
 .disco-gris{
     @extend .disco-blanco;
-    background-color: $gris;
+    background-color: map-get($map: $ColorFondo, $key: gris);
 }
 
 .disco-negro{
     @extend .disco-blanco;
-        background-color: $negro;
+        background-color: map-get($map: $ColorFondo, $key: negro);
         div{
             h1{
                 color: $blanco;

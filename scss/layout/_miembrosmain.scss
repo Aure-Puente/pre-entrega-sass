@@ -31,7 +31,7 @@
         button{
             margin-top: 2.8125rem;
             a{
-                background-color: $amarillo;
+                background-color: map-get($map: $ColorFondo, $key: amarillo);
                 color: $negro;
                 font-family: 'Archivo Black', sans-serif;
                 padding: .9375rem .9375rem;
@@ -48,56 +48,56 @@
 
 .fotochester{
     grid-area: zona1;
-    background-color: #F2F2F2;
+    background-color: map-get($map: $ColorFondo, $key: blanco);
 }
 .biochester{
     grid-area: zona2;
-    background-color: #F2F2F2;
+    background-color: map-get($map: $ColorFondo, $key: blanco);
 }
 
 .fotomike{
     grid-area: zona4;
-    background-color: #ADB3B1;
+    background-color: map-get($map: $ColorFondo, $key: gris);
 }
 .biomike{
     grid-area: zona3;
-    background-color: #ADB3B1;
+    background-color: map-get($map: $ColorFondo, $key: gris);
 }
 
 .fotobrad{
     grid-area: zona5;
-    background-color: #272829;
+    background-color: map-get($map: $ColorFondo, $key: negro);
 }
 .biobrad{
     grid-area: zona6;
-    background-color: #272829;
+    background-color: map-get($map: $ColorFondo, $key: negro);
 }
 
 .fotorob{
     grid-area: zona8;
-    background-color: #F2F2F2;
+    background-color: map-get($map: $ColorFondo, $key: blanco);
 }
 .biorob{
     grid-area: zona7;
-    background-color: #F2F2F2;
+    background-color: map-get($map: $ColorFondo, $key: blanco);
 }
 
 .fotomr{
     grid-area: zona9;
-    background-color: #ADB3B1;
+    background-color: map-get($map: $ColorFondo, $key: gris);
 }
 .biomr{
     grid-area: zona10;
-    background-color: #ADB3B1;
+    background-color: map-get($map: $ColorFondo, $key: gris);
 }
 
 .fotophoenix{
     grid-area: zona12;
-    background-color: #272829;
+    background-color: map-get($map: $ColorFondo, $key: negro);
 }
 .biophoenix{
     grid-area: zona11;
-    background-color: #272829;
+    background-color: map-get($map: $ColorFondo, $key: negro);
 }
 
 #colorblanco{
