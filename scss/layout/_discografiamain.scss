@@ -1,15 +1,14 @@
 .disco-blanco{
     @include flex;
+    justify-content: space-between;
     div{
         h1{
             @include typo;
-            margin-left: 25rem
         }
         ul{
             color: $negro;
             font-family: 'Archivo Black', sans-serif;
             font-size: 1.4375rem;
-            margin-left: 25rem;
         }
     }
 }
@@ -33,21 +32,35 @@
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .foto-discos{
     width: 31.25rem;
     height: 31.25rem;
+}
+
+.hybrid{
+    margin-right: 10rem;
+}
+
+.meteora{
+    margin-right: 19.375rem;
+}
+
+.suns{
+    margin-right: 5.9375rem;
+}
+
+.living{
+    margin-right: 11.875rem;
+}
+
+.light{
+    margin-right: 9.375rem;
+}
+
+.hunting{
+    margin-right: 3.4375rem;
+}
+
+.spotialbum{
+    width: 45.625rem;
 }
