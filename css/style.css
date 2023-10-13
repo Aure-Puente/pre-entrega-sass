@@ -132,32 +132,32 @@ body {
 
 /*Formulario en Productos*/
 .form {
-  margin-top: 3.125rem;
+  background-color: #272829;
 }
 
 .tipo-datos {
   font-family: "Archivo Black", sans-serif;
-  color: #272829;
+  color: #F2F2F2;
   text-align: center;
-  font-size: 2.1875rem;
-  margin-left: 1.25rem;
-  margin-top: 1.25rem;
+  font-size: 1.875rem;
+  margin-top: 2.1875rem;
+  margin-bottom: 0.9375rem;
 }
 
 .datos {
   font-family: "Archivo Black", sans-serif;
-  color: #272829;
-  text-align: left;
+  color: #F2F2F2;
+  text-align: center;
   font-size: 1.25rem;
-  margin-top: 1.875rem;
 }
 
 .botmerch {
-  background-color: #272829;
-  padding: 0.3125rem;
-  color: #F2F2F2;
+  background-color: #EAC050;
+  padding: 0.5rem;
+  color: #272829;
   font-family: "Archivo Black", sans-serif;
-  margin-top: 1.25rem;
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
   border-radius: 0.625rem;
   margin-left: 56.25rem;
 }
@@ -202,8 +202,9 @@ body {
   margin-top: 1.5625rem;
   margin-left: 1.25rem;
   justify-content: space-between;
+  margin-bottom: 1.25rem;
 }
-.disco-blanco div h1, .disco-negro div h1, .disco-gris div h1 {
+.disco-blanco div h2, .disco-negro div h2, .disco-gris div h2 {
   font-family: "Archivo Black", sans-serif;
   color: #272829;
   font-size: 2.5rem;
@@ -221,7 +222,7 @@ body {
 .disco-negro {
   background-color: #272829;
 }
-.disco-negro div h1 {
+.disco-negro div h2 {
   color: #F2F2F2;
 }
 .disco-negro div ul {
@@ -250,7 +251,7 @@ body {
 }
 
 .light {
-  margin-right: 9.375rem;
+  margin-right: 8.75rem;
 }
 
 .hunting {
@@ -258,14 +259,13 @@ body {
 }
 
 .spotialbum {
-  width: 45.625rem;
+  width: 40.3125rem;
 }
 
 /*Main Miembros*/
 .foto-miembros {
   width: 100%;
   height: 100%;
-  border-radius: 100px;
 }
 
 .miembros {
@@ -278,7 +278,7 @@ body {
 .miembros div {
   text-align: center;
 }
-.miembros div h1 {
+.miembros div h2 {
   font-family: "Archivo Black", sans-serif;
   color: #272829;
   font-size: 2.5rem;
@@ -308,7 +308,6 @@ body {
 
 .fotochester {
   grid-area: zona1;
-  background-color: #F2F2F2;
 }
 
 .biochester {
@@ -318,7 +317,6 @@ body {
 
 .fotomike {
   grid-area: zona4;
-  background-color: #ADB3B1;
 }
 
 .biomike {
@@ -328,7 +326,6 @@ body {
 
 .fotobrad {
   grid-area: zona5;
-  background-color: #272829;
 }
 
 .biobrad {
@@ -338,7 +335,6 @@ body {
 
 .fotorob {
   grid-area: zona8;
-  background-color: #F2F2F2;
 }
 
 .biorob {
@@ -348,7 +344,6 @@ body {
 
 .fotomr {
   grid-area: zona9;
-  background-color: #ADB3B1;
 }
 
 .biomr {
@@ -358,7 +353,6 @@ body {
 
 .fotophoenix {
   grid-area: zona12;
-  background-color: #272829;
 }
 
 .biophoenix {
@@ -366,7 +360,7 @@ body {
   background-color: #272829;
 }
 
-#colorblanco h1 {
+#colorblanco h2 {
   color: #F2F2F2;
 }
 #colorblanco p {
@@ -376,7 +370,6 @@ body {
 /*Footer*/
 footer {
   background-color: #ADB3B1;
-  margin-top: 1.5625rem;
   border-style: groove;
   border-color: #272829;
   width: 100%;
@@ -420,6 +413,20 @@ footer {
 
 .card-body {
   font-family: "Archivo Black", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.boton-card {
+  text-decoration: none;
+  color: #272829;
+  background-color: #EAC050;
+  padding: 0.3125rem;
+  border-radius: 0.625rem;
+  border-style: groove;
+  border-color: #272829;
 }
 
 /*-----------------MEDIA QUERIES-------------------*/

@@ -1,7 +1,6 @@
 .foto-miembros{
     width: 100%;
     height: 100%;
-    border-radius:100px;
 }
 
 .miembros{
@@ -18,7 +17,7 @@
     "zona11 zona11 zona11 zona12";
     div{
         text-align: center;
-        h1{
+        h2{
             @include typo;
         }
         p{
@@ -48,7 +47,6 @@
 
 .fotochester{
     grid-area: zona1;
-    background-color: map-get($map: $ColorFondo, $key: blanco);
 }
 .biochester{
     grid-area: zona2;
@@ -57,7 +55,6 @@
 
 .fotomike{
     grid-area: zona4;
-    background-color: map-get($map: $ColorFondo, $key: gris);
 }
 .biomike{
     grid-area: zona3;
@@ -66,7 +63,6 @@
 
 .fotobrad{
     grid-area: zona5;
-    background-color: map-get($map: $ColorFondo, $key: negro);
 }
 .biobrad{
     grid-area: zona6;
@@ -75,7 +71,6 @@
 
 .fotorob{
     grid-area: zona8;
-    background-color: map-get($map: $ColorFondo, $key: blanco);
 }
 .biorob{
     grid-area: zona7;
@@ -84,7 +79,6 @@
 
 .fotomr{
     grid-area: zona9;
-    background-color: map-get($map: $ColorFondo, $key: gris);
 }
 .biomr{
     grid-area: zona10;
@@ -93,7 +87,6 @@
 
 .fotophoenix{
     grid-area: zona12;
-    background-color: map-get($map: $ColorFondo, $key: negro);
 }
 .biophoenix{
     grid-area: zona11;
@@ -101,7 +94,7 @@
 }
 
 #colorblanco{
-    h1{
+    h2{
         color: #F2F2F2;
     }
     p{
