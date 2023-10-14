@@ -3,6 +3,11 @@
     border-color: $negro;
     border-style:groove;
     background-color: $gris;
+    transition: all 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.1);
 }
 
 .card-body{
@@ -15,11 +20,17 @@
 
 .boton-card{
     text-decoration: none;
-    color: $negro;
-    background-color: $amarillo;
+    color: $blanco;
+    background-color: $negro;
     padding: .3125rem;
     border-radius: .625rem;
     border-style: groove;
     border-color: $negro;
-    
+}
+
+.boton-card:hover{
+    padding: .5rem;
+    font-size: 1.25rem;
+    background-color: $amarillo;
+    color: $negro;
 }
