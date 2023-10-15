@@ -63,8 +63,6 @@
     font-size: 3.75rem
 }
 
-
-
 .contenedor-gris{
     @extend .contenedor;
     background-color: map-get($map: $ColorFondo, $key: gris);

@@ -686,16 +686,21 @@ footer {
     font-size: 1.5625rem;
   }
 }
+.contenedor-negro div a h1 {
+  color: #EAC050;
+}
+
 @media (max-width: 870px) {
   .logoheader {
     width: 37.5rem;
-    height: 9.375rem;
+    height: 10.625rem;
   }
   .noticia {
     font-size: 1.5625rem;
     padding-top: 0.625rem;
   }
   .contenedor, .contenedor-gris, .contenedor-negro {
+    background-color: #F2F2F2;
     flex-direction: column-reverse;
   }
   .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
@@ -715,7 +720,7 @@ footer {
 @media (max-width: 700px) {
   .logoheader {
     width: 25rem;
-    height: 6.25rem;
+    height: 9.375rem;
   }
   article {
     display: none;
@@ -740,13 +745,19 @@ footer {
 @media (max-width: 450px) {
   .logoheader {
     width: 15.625rem;
-    height: 4.375rem;
+    height: 6.25rem;
   }
   .titulo-contenedor {
     font-size: 2.1875rem;
   }
   .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
     width: 18.75rem;
+  }
+  .tamaño-logo {
+    width: 3.125rem;
+  }
+  .logo-final img {
+    width: 5.625rem;
   }
 }
 @media (max-width: 360px) {
@@ -768,7 +779,7 @@ footer {
 /* Responsive Singles */
 @media (max-width: 1050px) {
   .titulo-video {
-    font-size: 1.25rem;
+    font-size: 1.875rem;
   }
   .texto-video {
     font-size: 1.5625rem;
@@ -784,6 +795,19 @@ footer {
   .videos {
     margin-right: 1.25rem;
   }
+  .titulos {
+    font-size: 2.8125rem;
+    height: 3.125rem;
+  }
+}
+@media (max-width: 700px) {
+  .titulos {
+    font-size: 2.1875rem;
+    height: 2.5rem;
+  }
+  .titulo-video {
+    font-size: 1.5625rem;
+  }
 }
 @media (max-width: 550px) {
   .titulo-video {
@@ -791,10 +815,6 @@ footer {
   }
   .spotify {
     display: none;
-  }
-  .titulos {
-    font-size: 2.1875rem;
-    height: 2.5rem;
   }
   .videos {
     width: 25rem;
