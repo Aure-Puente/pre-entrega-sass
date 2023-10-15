@@ -49,7 +49,6 @@ header nav {
 }
 
 .nav-words:hover {
-  font-size: 2.5rem;
   text-decoration: underline;
 }
 
@@ -260,45 +259,56 @@ body {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
-  padding-top: 2.1875rem;
-  padding-bottom: 2.1875rem;
+  margin-top: 1.875rem;
 }
 
 /*Formulario en Productos*/
 .form {
   background-color: #272829;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 1.875rem;
 }
 
 .tipo-datos {
   font-family: "Archivo Black", sans-serif;
   color: #F2F2F2;
-  text-align: center;
   font-size: 1.875rem;
-  margin-top: 2.1875rem;
-  margin-bottom: 0.9375rem;
+  padding-left: 5rem;
 }
 
 .datos {
   font-family: "Archivo Black", sans-serif;
   color: #F2F2F2;
-  text-align: center;
   font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+  padding-left: 12.5rem;
+  padding-right: 6.25rem;
+}
+
+.flex-boton {
+  background-color: #272829;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.25rem;
 }
 
 .botmerch {
-  background-color: #EAC050;
+  width: 9.375rem;
+  background-color: #F2F2F2;
   padding: 0.5rem;
   color: #272829;
   font-family: "Archivo Black", sans-serif;
-  margin-top: 1.875rem;
-  margin-bottom: 1.25rem;
   border-radius: 0.625rem;
-  margin-left: 56.25rem;
+  transition: 0.5s;
 }
 
 .botmerch:hover {
-  padding: 0.5rem;
-  font-size: 1.25rem;
+  background-color: #EAC050;
 }
 
 /*Main de Singles*/
@@ -396,7 +406,6 @@ body {
 
 .foto-discos {
   width: 31.25rem;
-  height: 31.25rem;
   -webkit-animation: flip-in-ver-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: flip-in-ver-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -630,6 +639,7 @@ footer {
   border-style: groove;
   background-color: #ADB3B1;
   transition: all 0.5s;
+  margin: 0.3125rem;
 }
 
 .card:hover {
@@ -655,8 +665,6 @@ footer {
 }
 
 .boton-card:hover {
-  padding: 0.5rem;
-  font-size: 1.25rem;
   background-color: #EAC050;
   color: #272829;
 }
@@ -669,6 +677,9 @@ footer {
   }
   .titulo-contenedor {
     background-color: #272829;
+    color: #EAC050;
+  }
+  .contenedor-negro div a h1 {
     color: #EAC050;
   }
 }
@@ -686,10 +697,6 @@ footer {
     font-size: 1.5625rem;
   }
 }
-.contenedor-negro div a h1 {
-  color: #EAC050;
-}
-
 @media (max-width: 870px) {
   .logoheader {
     width: 37.5rem;
@@ -810,6 +817,9 @@ footer {
   }
 }
 @media (max-width: 550px) {
+  .titulos {
+    display: none;
+  }
   .titulo-video {
     font-size: 0.9375rem;
   }
@@ -829,9 +839,6 @@ footer {
   }
 }
 @media (max-width: 320px) {
-  .titulos {
-    display: none;
-  }
   .titulo-video {
     font-size: 0.625rem;
   }
@@ -840,6 +847,41 @@ footer {
   }
   .videos {
     margin-left: 0.5625rem;
+  }
+}
+/* Responsive Merchandising */
+@media (max-width: 700px) {
+  .merchandising {
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+  }
+  .card {
+    margin: 0.9375rem;
+  }
+  .tipo-datos {
+    padding-left: 1.25rem;
+  }
+  .datos {
+    padding-left: 3.125rem;
+    padding-right: 1.25rem;
+  }
+}
+@media (max-width: 370px) {
+  .form {
+    height: 37.5rem;
+  }
+  .tipo-datos {
+    font-size: 1.5625rem;
+  }
+  .datos {
+    font-size: 0.9375rem;
+    padding-left: 1.25rem;
+  }
+  .botmerch {
+    width: 6.25rem;
+    padding: 0.3125rem;
+    font-size: 0.9375rem;
   }
 }
 

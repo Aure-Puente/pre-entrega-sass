@@ -4,6 +4,7 @@
     border-style:groove;
     background-color: $gris;
     transition: all 0.5s;
+    margin: .3125rem;
 }
 
 .card:hover{
@@ -29,8 +30,6 @@
 }
 
 .boton-card:hover{
-    padding: .5rem;
-    font-size: 1.25rem;
     background-color: $amarillo;
     color: $negro;
 }

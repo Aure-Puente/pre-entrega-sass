@@ -1,35 +1,47 @@
 .form{
     background-color: $negro;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 1.875rem;
 }
 
 .tipo-datos{
     font-family: 'Archivo Black', sans-serif;
     color: $blanco;
-    text-align: center;
     font-size: 1.875rem;
-    margin-top: 2.1875rem;
-    margin-bottom: .9375rem;
+    padding-left: 5rem;
 }
 
 .datos{
     font-family: 'Archivo Black', sans-serif;
     color: $blanco;
-    text-align: center;
     font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3125rem;
+    padding-left: 12.5rem;
+    padding-right: 6.25rem;
+}
+
+.flex-boton{
+    background-color: $negro;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.25rem;
 }
 
 .botmerch{
-    background-color: $amarillo;
+    width: 9.375rem;
+    background-color: $blanco;
     padding: .5rem;
     color: $negro;
     font-family: 'Archivo Black', sans-serif;
-    margin-top: 1.875rem;
-    margin-bottom: 1.25rem;
     border-radius: .625rem;
-    margin-left: 56.25rem;
+    transition: 0.5s;
 }
 
 .botmerch:hover{
-    padding: .5rem;
-    font-size: 1.25rem;
+    background-color: $amarillo;
 }
