@@ -1,0 +1,30 @@
+/*Index*/
+
+@media (max-width: 320px){
+    .titulo-contenedor{
+        font-size: 1.5625rem;
+    }
+    
+    .contenedor{
+        a{
+            img{
+                width: 15.625rem;
+            }
+        }
+    }
+}
+
+
+/*Singles*/
+
+@media (max-width: 320px){
+    .titulo-video{
+        font-size: .625rem ;
+    }
+    .spotify{
+        font-size: 1.25rem;
+    }
+    .videos{
+        margin-left: .5625rem;
+    }
+}

@@ -1,0 +1,17 @@
+/*Header y Navbar*/
+
+@media (max-width: 991px){
+    #navbarSupportedContent{
+        background-color: $negro;
+    }
+    .nav-link{
+        color: $blanco;
+        padding-left: 1.25rem;
+    }
+    .container-fluid{
+        flex-direction: column;
+    }
+    .logoheader{
+        width: 37.5rem;
+    }
+}

@@ -1,0 +1,25 @@
+/*Navbar e Index*/
+
+@media (max-width: 1170px){
+    .nav-link{
+        font-size: 1.25rem;
+    }
+    .noticia{
+        font-size: 1.875rem;
+    }
+    .titulo-contenedor{
+        font-size: 2.8125rem ;
+    }
+    .contenedor{
+        a{
+            img{
+            width: 25rem;
+            }
+        }
+        div{
+            p{
+                font-size: 1.5625rem ;
+            }
+        }
+    }
+}

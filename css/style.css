@@ -19,7 +19,6 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
-  height: 12.5rem;
 }
 
 .logoheader {
@@ -671,11 +670,8 @@ footer {
 }
 
 /*-----------------MEDIA QUERIES-------------------*/
-/*Index*/
+/*Navbar*/
 @media (max-width: 1620px) {
-  .logoheader {
-    width: 28.125rem;
-  }
   .container-fluid {
     flex-direction: column;
   }
@@ -683,6 +679,7 @@ footer {
     margin-bottom: 1.25rem;
   }
 }
+/*Navbar e Index*/
 @media (max-width: 1375px) {
   .nav-link {
     font-size: 1.5625rem;
@@ -695,6 +692,7 @@ footer {
     color: #EAC050;
   }
 }
+/*Navbar e Index*/
 @media (max-width: 1170px) {
   .nav-link {
     font-size: 1.25rem;
@@ -712,19 +710,48 @@ footer {
     font-size: 1.5625rem;
   }
 }
-@media (max-width: 991px) {
-  .container-fluid {
-    flex-direction: row;
+/*Singles*/
+@media (max-width: 1050px) {
+  .titulo-video {
+    font-size: 1.875rem;
   }
+  .texto-video {
+    font-size: 1.5625rem;
+  }
+  .spotify {
+    font-size: 2.1875rem;
+  }
+}
+/*Header y Navbar*/
+@media (max-width: 991px) {
   #navbarSupportedContent {
     background-color: #272829;
-    z-index: 2;
   }
   .nav-link {
     color: #F2F2F2;
     padding-left: 1.25rem;
   }
+  .container-fluid {
+    flex-direction: column;
+  }
+  .logoheader {
+    width: 37.5rem;
+  }
 }
+/*Singles*/
+@media (max-width: 900px) {
+  .texto-video {
+    display: none;
+  }
+  .videos {
+    margin-right: 1.25rem;
+  }
+  .titulos {
+    font-size: 2.8125rem;
+    height: 3.125rem;
+  }
+}
+/*Index y Footer*/
 @media (max-width: 870px) {
   .noticia {
     font-size: 1.5625rem;
@@ -748,6 +775,7 @@ footer {
     display: none;
   }
 }
+/*Index*/
 @media (max-width: 700px) {
   article {
     display: none;
@@ -768,104 +796,11 @@ footer {
   .logo-final img {
     width: 6.875rem;
   }
-}
-@media (max-width: 450px) {
-  .titulo-contenedor {
-    font-size: 2.1875rem;
-  }
-  .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
-    width: 18.75rem;
-  }
-  .tamaño-logo {
-    width: 3.125rem;
-  }
-  .logo-final img {
-    width: 5.625rem;
+  .logoheader {
+    width: 26.25rem;
   }
 }
-@media (max-width: 360px) {
-  .titulo-contenedor {
-    font-size: 1.875rem;
-  }
-  .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
-    width: 17.5rem;
-  }
-}
-@media (max-width: 320px) {
-  .titulo-contenedor {
-    font-size: 1.5625rem;
-  }
-  .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
-    width: 15.625rem;
-  }
-}
-/* Responsive Singles */
-@media (max-width: 1050px) {
-  .titulo-video {
-    font-size: 1.875rem;
-  }
-  .texto-video {
-    font-size: 1.5625rem;
-  }
-  .spotify {
-    font-size: 2.1875rem;
-  }
-}
-@media (max-width: 900px) {
-  .texto-video {
-    display: none;
-  }
-  .videos {
-    margin-right: 1.25rem;
-  }
-  .titulos {
-    font-size: 2.8125rem;
-    height: 3.125rem;
-  }
-}
-@media (max-width: 700px) {
-  .titulos {
-    font-size: 2.1875rem;
-    height: 2.5rem;
-  }
-  .titulo-video {
-    font-size: 1.5625rem;
-  }
-}
-@media (max-width: 550px) {
-  .titulos {
-    display: none;
-  }
-  .titulo-video {
-    font-size: 0.9375rem;
-  }
-  .spotify {
-    display: none;
-  }
-  .videos {
-    width: 25rem;
-  }
-  main div iframe {
-    margin-top: 0.3125rem;
-  }
-}
-@media (max-width: 440px) {
-  .videos {
-    width: 14.375rem;
-  }
-}
-@media (max-width: 320px) {
-  .titulo-video {
-    font-size: 0.625rem;
-  }
-  .spotify {
-    font-size: 1.25rem;
-  }
-  .videos {
-    margin-left: 0.5625rem;
-  }
-}
-/* Responsive Merchandising */
+/*Productos*/
 @media (max-width: 700px) {
   .merchandising {
     flex-direction: column;
@@ -883,6 +818,59 @@ footer {
     padding-right: 1.25rem;
   }
 }
+/*SIngles*/
+@media (max-width: 700px) {
+  .titulos {
+    font-size: 2.1875rem;
+    height: 2.5rem;
+  }
+  .titulo-video {
+    font-size: 1.5625rem;
+  }
+}
+/*Singles*/
+@media (max-width: 550px) {
+  .titulos {
+    display: none;
+  }
+  .titulo-video {
+    font-size: 0.9375rem;
+  }
+  .spotify {
+    display: none;
+  }
+  .videos {
+    width: 25rem;
+  }
+  main div iframe {
+    margin-top: 0.3125rem;
+  }
+}
+/*Index*/
+@media (max-width: 450px) {
+  .titulo-contenedor {
+    font-size: 2.1875rem;
+  }
+  .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
+    width: 18.75rem;
+  }
+  .tamaño-logo {
+    width: 3.125rem;
+  }
+  .logo-final img {
+    width: 5.625rem;
+  }
+  .logoheader {
+    width: 18.75rem;
+  }
+}
+/*Singles*/
+@media (max-width: 440px) {
+  .videos {
+    width: 14.375rem;
+  }
+}
+/*Productos*/
 @media (max-width: 370px) {
   .form {
     height: 37.5rem;
@@ -898,6 +886,36 @@ footer {
     width: 6.25rem;
     padding: 0.3125rem;
     font-size: 0.9375rem;
+  }
+}
+/*Index*/
+@media (max-width: 360px) {
+  .titulo-contenedor {
+    font-size: 1.875rem;
+  }
+  .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
+    width: 17.5rem;
+  }
+}
+/*Index*/
+@media (max-width: 320px) {
+  .titulo-contenedor {
+    font-size: 1.5625rem;
+  }
+  .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
+    width: 15.625rem;
+  }
+}
+/*Singles*/
+@media (max-width: 320px) {
+  .titulo-video {
+    font-size: 0.625rem;
+  }
+  .spotify {
+    font-size: 1.25rem;
+  }
+  .videos {
+    margin-left: 0.5625rem;
   }
 }
 

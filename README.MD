@@ -1,18 +1,7 @@
-# Segunda Pre-Entrega
+# Tercera Pre-Entrega
 
 ------------
-## Flex Box:
-### Aplicado en header, Barra de navegación, page index, page merchandising,  page singles y page discografía.
-
-## GRID:
-### Aplicado en page miembros.
-
-## Bootstrap:
-### Aplicado en las cards en page productos.
-
-## Media Queries:
-### Aplicado en Index y en page singles.
-
+### Las Pages full responsive son: Index, Productos y Singles
 ------------
 
 ## Muchas gracias por la corrección !

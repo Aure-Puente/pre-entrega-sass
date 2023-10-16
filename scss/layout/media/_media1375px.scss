@@ -1,0 +1,21 @@
+/*Navbar e Index*/
+
+@media (max-width: 1375px){
+    .nav-link{
+        font-size: 1.5625rem;
+    }
+    .titulo-contenedor{
+        background-color: #272829;
+        color: #EAC050;
+    }
+    .contenedor-negro{
+        div{
+            a{
+                h1{
+                    color: $amarillo;
+                }
+            }
+        }
+    }
+    
+}

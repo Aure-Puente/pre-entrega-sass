@@ -1,0 +1,29 @@
+/*Index y Footer*/
+
+@media (max-width: 870px){
+    .noticia{
+        font-size: 1.5625rem;
+        padding-top: .625rem;
+    }
+    .contenedor{
+        background-color: $blanco;
+        flex-direction: column-reverse;
+        a{
+            img{
+                width: 31.25rem;
+            }
+        }
+        div{
+            p{
+                display: none;
+            }
+        }
+    }
+    .titulo-contenedor{
+        margin-bottom: .3125rem;
+        font-size: 3.4375rem;
+    }
+    .nombre-logo{
+        display: none;
+    }
+}
