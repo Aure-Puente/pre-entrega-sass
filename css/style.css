@@ -19,37 +19,11 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
-}
-header nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
+  height: 12.5rem;
 }
 
 .logoheader {
-  width: 46.875rem;
-  height: 15.625rem;
-}
-
-/*Barra de Navegación*/
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-  list-style: none;
-}
-
-.nav-words {
-  text-decoration: none;
-  color: #272829;
-  font-size: 2.1875rem;
-  font-family: "Black Ops One", cursive;
-  text-transform: uppercase;
-}
-
-.nav-words:hover {
-  text-decoration: underline;
+  width: 37.5rem;
 }
 
 /*Artículo*/
@@ -580,7 +554,7 @@ footer {
 }
 
 .tamaño-logo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .logos-redes {
@@ -632,6 +606,33 @@ footer {
   }
 }
 /*--------------------COMPONENT------------------*/
+/*Bootstrap*/
+/*Barra de Navegación*/
+.nav-link {
+  color: #272829;
+  font-family: "Black Ops One", cursive;
+  font-size: 1.875rem;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.nav-btn {
+  background-color: #ADB3B1;
+  color: #272829;
+  font-family: "Archivo Black", sans-serif;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  border-radius: 20%;
+  transition: 0.5s;
+}
+
+.nav-btn:hover {
+  background-color: #EAC050;
+}
+
 /*Cards con Bootstrap en Productos*/
 .card {
   border-width: 0.3125rem;
@@ -670,10 +671,21 @@ footer {
 }
 
 /*-----------------MEDIA QUERIES-------------------*/
-/*Generales*/
+/*Index*/
+@media (max-width: 1620px) {
+  .logoheader {
+    width: 28.125rem;
+  }
+  .container-fluid {
+    flex-direction: column;
+  }
+  .d-flex {
+    margin-bottom: 1.25rem;
+  }
+}
 @media (max-width: 1375px) {
-  .navbar {
-    display: none;
+  .nav-link {
+    font-size: 1.5625rem;
   }
   .titulo-contenedor {
     background-color: #272829;
@@ -683,7 +695,10 @@ footer {
     color: #EAC050;
   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 1170px) {
+  .nav-link {
+    font-size: 1.25rem;
+  }
   .noticia {
     font-size: 1.875rem;
   }
@@ -697,11 +712,20 @@ footer {
     font-size: 1.5625rem;
   }
 }
-@media (max-width: 870px) {
-  .logoheader {
-    width: 37.5rem;
-    height: 10.625rem;
+@media (max-width: 991px) {
+  .container-fluid {
+    flex-direction: row;
   }
+  #navbarSupportedContent {
+    background-color: #272829;
+    z-index: 2;
+  }
+  .nav-link {
+    color: #F2F2F2;
+    padding-left: 1.25rem;
+  }
+}
+@media (max-width: 870px) {
   .noticia {
     font-size: 1.5625rem;
     padding-top: 0.625rem;
@@ -725,10 +749,6 @@ footer {
   }
 }
 @media (max-width: 700px) {
-  .logoheader {
-    width: 25rem;
-    height: 9.375rem;
-  }
   article {
     display: none;
   }
@@ -750,10 +770,6 @@ footer {
   }
 }
 @media (max-width: 450px) {
-  .logoheader {
-    width: 15.625rem;
-    height: 6.25rem;
-  }
   .titulo-contenedor {
     font-size: 2.1875rem;
   }

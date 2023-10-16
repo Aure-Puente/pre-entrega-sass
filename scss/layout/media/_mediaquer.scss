@@ -1,13 +1,24 @@
-@media (max-width: 1375px){
-    .navbar{
-        display: none;
+@media (max-width: 1620px){
+    .logoheader{
+        width: 28.125rem;
     }
+    .container-fluid{
+        flex-direction: column;
+    }
+    .d-flex{
+        margin-bottom: 1.25rem;
+    }
+}
 
+
+@media (max-width: 1375px){
+    .nav-link{
+        font-size: 1.5625rem;
+    }
     .titulo-contenedor{
         background-color: #272829;
         color: #EAC050;
     }
-
     .contenedor-negro{
         div{
             a{
@@ -21,18 +32,16 @@
 }
 
 
-
-
-@media (max-width: 1040px){
+@media (max-width: 1170px){
+    .nav-link{
+        font-size: 1.25rem;
+    }
     .noticia{
         font-size: 1.875rem;
     }
-
-
     .titulo-contenedor{
         font-size: 2.8125rem ;
     }
-
     .contenedor{
         a{
             img{
@@ -47,17 +56,27 @@
     }
 }
 
-@media (max-width: 870px){
-    .logoheader{
-        width: 37.5rem;
-        height: 10.625rem;
+
+@media (max-width: 991px){
+    .container-fluid{
+        flex-direction: row;
     }
-    
+    #navbarSupportedContent{
+        background-color: $negro;
+        z-index: 2;
+    }
+    .nav-link{
+        color: $blanco;
+        padding-left: 1.25rem;
+    }
+}
+
+
+@media (max-width: 870px){
     .noticia{
         font-size: 1.5625rem;
         padding-top: .625rem;
     }
-
     .contenedor{
         background-color: $blanco;
         flex-direction: column-reverse;
@@ -72,12 +91,10 @@
             }
         }
     }
-
     .titulo-contenedor{
         margin-bottom: .3125rem;
         font-size: 3.4375rem;
     }
-
     .nombre-logo{
         display: none;
     }
@@ -85,24 +102,16 @@
 
 
 @media (max-width: 700px){
-    .logoheader{
-        width: 25rem;
-        height: 9.375rem;
-}
-
     article{
         display: none;
     }
-
     header{
         border-style: groove;
         border-color: #272829;
     }
-
     .titulo-contenedor{
         font-size: 2.8125rem;
     }
-
     .contenedor{
         a{
             img{
@@ -110,11 +119,9 @@
             }
         }
     }
-
     .tamaño-logo{
         width: 4.0625rem;
     }
-
     .logo-final{
         img{
             width: 6.875rem;
@@ -124,23 +131,15 @@
 
 
 @media (max-width: 450px){
-    .logoheader{
-        width: 15.625rem;
-        height: 6.25rem;
-    }
-
     .titulo-contenedor{
         font-size: 2.1875rem;
     }
-
     .contenedor a img{
         width: 18.75rem;
     }
-
     .tamaño-logo{
         width: 3.125rem;
     }
-
     .logo-final img{
         width: 5.625rem;
     }

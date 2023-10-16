@@ -20,15 +20,35 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="../assets/img/logoheader.png" class="logoheader" alt="Logo palabra Linkin Park">
-            <ul class="navbar">
-                <li><a href="../index.html" class="nav-words">Inicio</a ></li>
-                <li><a href="#" class="nav-words">Productos</a></li>
-                <li><a href="../pages/singles.html" class="nav-words">Singles</a></li>
-                <li><a href="../pages/discografía.html" class="nav-words">Discografía</a></li>
-                <li><a href="../pages/miembros.html" class="nav-words">Integrantes</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/logoheader.png" alt="Logo palabra Linkin Park" class="logoheader">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/singles.html">SINGLES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/discografía.html">DISCOGRAFÍA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/miembros.html">INTEGRANTES</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="nav-btn" type="submit">BUSCAR</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main>

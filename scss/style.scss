@@ -21,9 +21,6 @@
 /*Header*/
 @import"./layout/header";
 
-/*Barra de Navegación*/
-@import"./layout/navbar";
-
 /*Artículo*/
 @import"./layout/articulo";
 
@@ -57,11 +54,16 @@
 
 /*--------------------COMPONENT------------------*/
 
+/*Bootstrap*/
+
+/*Barra de Navegación*/
+@import"./components/navbar";
+
 /*Cards con Bootstrap en Productos*/
 @import"./components/cards";
 
 
 /*-----------------MEDIA QUERIES-------------------*/
 
-/*Generales*/
+/*Index*/
 @import"./layout/media/mediaquer";
