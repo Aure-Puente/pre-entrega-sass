@@ -732,7 +732,7 @@ footer {
     padding-left: 1.25rem;
   }
   .container-fluid {
-    flex-direction: column;
+    flex-direction: row;
   }
   .logoheader {
     width: 37.5rem;
@@ -775,7 +775,7 @@ footer {
     display: none;
   }
 }
-/*Index*/
+/* Header e Index*/
 @media (max-width: 700px) {
   article {
     display: none;
@@ -846,7 +846,7 @@ footer {
     margin-top: 0.3125rem;
   }
 }
-/*Index*/
+/* Header e Index*/
 @media (max-width: 450px) {
   .titulo-contenedor {
     font-size: 2.1875rem;
