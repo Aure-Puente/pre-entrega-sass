@@ -1,8 +1,10 @@
 @mixin flex{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 1.5625rem;
-    margin-left: 1.25rem;
+    padding-top: 1.25rem;
+    padding-left: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 @mixin typo{

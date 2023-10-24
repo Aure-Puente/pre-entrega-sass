@@ -152,9 +152,11 @@ body {
 /*Main del Index*/
 .contenedor, .contenedor-negro, .contenedor-gris {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 1.5625rem;
-  margin-left: 1.25rem;
+  padding-top: 1.25rem;
+  padding-left: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .contenedor a img, .contenedor-negro a img, .contenedor-gris a img {
   width: 31.25rem;
@@ -295,9 +297,11 @@ body {
 
 .videos {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 1.5625rem;
-  margin-left: 1.25rem;
+  padding-top: 1.25rem;
+  padding-left: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .texto-video {
@@ -339,23 +343,25 @@ body {
   color: #272829;
   font-size: 2.5rem;
   text-align: left;
-  margin-left: 1.25rem;
-  margin-top: 2.5rem;
+  padding-left: 1.25rem;
+  padding-top: 2.5rem;
 }
 
 /*Main Discografía*/
 .disco-blanco, .disco-negro, .disco-gris {
   display: flex;
-  align-items: center;
-  margin-top: 1.5625rem;
-  margin-left: 1.25rem;
   justify-content: space-between;
-  margin-bottom: 1.25rem;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-left: 1.25rem;
+  padding-bottom: 1.25rem;
+  justify-content: space-between;
 }
 .disco-blanco div h2, .disco-negro div h2, .disco-gris div h2 {
   font-family: "Archivo Black", sans-serif;
   color: #272829;
   font-size: 2.5rem;
+  padding-left: 0.625rem;
 }
 .disco-blanco div ul, .disco-negro div ul, .disco-gris div ul {
   color: #272829;
@@ -407,32 +413,13 @@ body {
     opacity: 1;
   }
 }
-.hybrid {
-  margin-right: 10rem;
-}
-
-.meteora {
-  margin-right: 19.375rem;
-}
-
-.suns {
-  margin-right: 5.9375rem;
-}
-
-.living {
-  margin-right: 11.875rem;
-}
-
-.light {
-  margin-right: 8.75rem;
-}
-
-.hunting {
-  margin-right: 3.4375rem;
+.lista {
+  display: flex;
 }
 
 .spotialbum {
   width: 40.3125rem;
+  padding-right: 2.8125rem;
 }
 
 /*Main Miembros*/
@@ -692,6 +679,17 @@ footer {
     color: #EAC050;
   }
 }
+/*Discografía*/
+@media (max-width: 1375px) {
+  .disco-blanco, .disco-gris, .disco-negro {
+    flex-direction: column;
+  }
+  .spotialbum {
+    padding-top: 1.25rem;
+    padding-right: 1.25rem;
+    width: 100%;
+  }
+}
 /*Navbar e Index*/
 @media (max-width: 1170px) {
   .nav-link {
@@ -751,6 +749,7 @@ footer {
     height: 3.125rem;
   }
 }
+/*Discografía*/
 /*Index y Footer*/
 @media (max-width: 870px) {
   .noticia {

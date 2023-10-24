@@ -19,3 +19,17 @@
     }
     
 }
+
+
+/*Discografía*/
+
+@media (max-width: 1375px){
+    .disco-blanco{
+        flex-direction: column;
+    }
+    .spotialbum{
+        padding-top: 1.25rem;
+        padding-right: 1.25rem;
+        width: 100%;
+    }
+}
