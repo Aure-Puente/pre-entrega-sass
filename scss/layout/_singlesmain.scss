@@ -1,13 +1,14 @@
 .titulo-video{
-    font-family: 'Black Ops One', cursive;
-    color: $negro;
-    text-align: left;
-    font-size: 2.1875rem;
-    margin-top: 1.875rem;
+    h2{
+        @include typo;
+        padding-left: 1.25rem;
+        margin-top: 1.25rem
+    }
 }
 
 .videos{
-    @include flex
+    @include flex;
+    padding-top: 0%;
 }
 
 .texto-video{
@@ -47,8 +48,10 @@
 }
 
 .spotify{
-    @include typo;
-    text-align: left;
     padding-left: 1.25rem;
-    padding-top: 2.5rem;
+    padding-right: 1.25rem;
+    h3{
+        @include typo;
+        padding-top: 1.25rem;
+    }
 }

@@ -1,15 +1,18 @@
+/*Titulos*/
+
+@media (max-width: 900px){
+    .titulos{
+        font-size: 2.8125rem;
+        height: 3.125rem;
+    }
+}
+
+
 /*Singles*/
 
 @media (max-width: 900px){
     .texto-video{
         display: none;
-    }
-    .videos{
-        margin-right: 1.25rem;
-    }
-    .titulos{
-        font-size: 2.8125rem;
-        height: 3.125rem;
     }
 }
 

@@ -1,13 +1,12 @@
 /*Singles*/
 
 @media (max-width: 1050px){
-    .titulo-video{
-        font-size:1.875rem;
-    }
     .texto-video{
         font-size: 1.5625rem;
     }
     .spotify{
-        font-size: 2.1875rem;
+        h3{
+            font-size: 2.1875rem;
+        }
     }
 }

@@ -285,12 +285,12 @@ body {
 }
 
 /*Main de Singles*/
-.titulo-video {
-  font-family: "Black Ops One", cursive;
+.titulo-video h2 {
+  font-family: "Archivo Black", sans-serif;
   color: #272829;
-  text-align: left;
-  font-size: 2.1875rem;
-  margin-top: 1.875rem;
+  font-size: 2.5rem;
+  padding-left: 1.25rem;
+  margin-top: 1.25rem;
 }
 
 .videos {
@@ -298,6 +298,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem;
+  padding-top: 0%;
 }
 
 .texto-video {
@@ -335,12 +336,14 @@ body {
   }
 }
 .spotify {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.spotify h3 {
   font-family: "Archivo Black", sans-serif;
   color: #272829;
   font-size: 2.5rem;
-  text-align: left;
-  padding-left: 1.25rem;
-  padding-top: 2.5rem;
+  padding-top: 1.25rem;
 }
 
 /*Main Discografía*/
@@ -719,13 +722,10 @@ footer {
 }
 /*Singles*/
 @media (max-width: 1050px) {
-  .titulo-video {
-    font-size: 1.875rem;
-  }
   .texto-video {
     font-size: 1.5625rem;
   }
-  .spotify {
+  .spotify h3 {
     font-size: 2.1875rem;
   }
 }
@@ -745,17 +745,17 @@ footer {
     width: 37.5rem;
   }
 }
+/*Titulos*/
+@media (max-width: 900px) {
+  .titulos {
+    font-size: 2.8125rem;
+    height: 3.125rem;
+  }
+}
 /*Singles*/
 @media (max-width: 900px) {
   .texto-video {
     display: none;
-  }
-  .videos {
-    margin-right: 1.25rem;
-  }
-  .titulos {
-    font-size: 2.8125rem;
-    height: 3.125rem;
   }
 }
 /*Discografía*/
@@ -824,6 +824,13 @@ footer {
     width: 26.25rem;
   }
 }
+/*Titulos*/
+@media (max-width: 700px) {
+  .titulos {
+    font-size: 2.1875rem;
+    height: 2.5rem;
+  }
+}
 /*Productos*/
 @media (max-width: 700px) {
   .merchandising {
@@ -842,32 +849,19 @@ footer {
     padding-right: 1.25rem;
   }
 }
-/*SIngles*/
+/*Singles*/
 @media (max-width: 700px) {
-  .titulos {
-    font-size: 2.1875rem;
-    height: 2.5rem;
+  .titulo-video h2 {
+    font-size: 1.875rem;
   }
-  .titulo-video {
-    font-size: 1.5625rem;
+  .spotify h3 {
+    font-size: 1.875rem;
   }
 }
-/*Singles*/
+/*Titulo*/
 @media (max-width: 550px) {
   .titulos {
     display: none;
-  }
-  .titulo-video {
-    font-size: 0.9375rem;
-  }
-  .spotify {
-    display: none;
-  }
-  .videos {
-    width: 25rem;
-  }
-  main div iframe {
-    margin-top: 0.3125rem;
   }
 }
 /*Discografía*/
@@ -895,12 +889,6 @@ footer {
   }
   .logoheader {
     width: 18.75rem;
-  }
-}
-/*Singles*/
-@media (max-width: 440px) {
-  .videos {
-    width: 14.375rem;
   }
 }
 /*Productos*/
@@ -946,18 +934,6 @@ footer {
   }
   .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
     width: 15.625rem;
-  }
-}
-/*Singles*/
-@media (max-width: 320px) {
-  .titulo-video {
-    font-size: 0.625rem;
-  }
-  .spotify {
-    font-size: 1.25rem;
-  }
-  .videos {
-    margin-left: 0.5625rem;
   }
 }
 
