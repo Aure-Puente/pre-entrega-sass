@@ -1,16 +1,16 @@
 .disco-blanco{
     @include flex;
-    justify-content: space-between;
-    div{
-        h2{
-            @include typo;
-            padding-left: .625rem;
-        }
-        ul{
-            color: $negro;
-            font-family: 'Archivo Black', sans-serif;
-            font-size: 1.4375rem;
-        }
+}
+
+.lista{
+    h2{
+        @include typo;
+        padding-left: .625rem;
+    }
+    ul{
+        color: $negro;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 1.4375rem;
     }
 }
 
@@ -70,5 +70,4 @@
 
 .spotialbum{
     width: 40.3125rem;
-    padding-right: 2.8125rem;
 }

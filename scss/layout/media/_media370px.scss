@@ -17,3 +17,18 @@
         font-size: .9375rem;
     }
 }
+
+
+/*DIscografía*/
+
+@media (max-width: 370px){
+    .lista{
+        h2{
+            font-size: 1.875rem;
+        }
+    }
+    .foto-discos{
+        width: 18.75rem;
+    }
+}
+

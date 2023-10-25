@@ -154,9 +154,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.25rem;
-  padding-left: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding: 1.25rem;
 }
 .contenedor a img, .contenedor-negro a img, .contenedor-gris a img {
   width: 31.25rem;
@@ -299,9 +297,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.25rem;
-  padding-left: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding: 1.25rem;
 }
 
 .texto-video {
@@ -352,18 +348,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.25rem;
-  padding-left: 1.25rem;
-  padding-bottom: 1.25rem;
-  justify-content: space-between;
+  padding: 1.25rem;
 }
-.disco-blanco div h2, .disco-negro div h2, .disco-gris div h2 {
+
+.lista h2 {
   font-family: "Archivo Black", sans-serif;
   color: #272829;
   font-size: 2.5rem;
   padding-left: 0.625rem;
 }
-.disco-blanco div ul, .disco-negro div ul, .disco-gris div ul {
+.lista ul {
   color: #272829;
   font-family: "Archivo Black", sans-serif;
   font-size: 1.4375rem;
@@ -419,7 +413,6 @@ body {
 
 .spotialbum {
   width: 40.3125rem;
-  padding-right: 2.8125rem;
 }
 
 /*Main Miembros*/
@@ -683,10 +676,10 @@ footer {
 @media (max-width: 1375px) {
   .disco-blanco, .disco-gris, .disco-negro {
     flex-direction: column;
+    align-items: center;
   }
   .spotialbum {
     padding-top: 1.25rem;
-    padding-right: 1.25rem;
     width: 100%;
   }
 }
@@ -750,6 +743,16 @@ footer {
   }
 }
 /*Discografía*/
+@media (max-width: 900px) {
+  .lista {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .lista ul {
+    display: none;
+  }
+}
 /*Index y Footer*/
 @media (max-width: 870px) {
   .noticia {
@@ -845,6 +848,15 @@ footer {
     margin-top: 0.3125rem;
   }
 }
+/*Discografía*/
+@media (max-width: 550px) {
+  .lista h2 {
+    font-size: 2.1875rem;
+  }
+  .foto-discos {
+    width: 21.875rem;
+  }
+}
 /* Header e Index*/
 @media (max-width: 450px) {
   .titulo-contenedor {
@@ -885,6 +897,15 @@ footer {
     width: 6.25rem;
     padding: 0.3125rem;
     font-size: 0.9375rem;
+  }
+}
+/*DIscografía*/
+@media (max-width: 370px) {
+  .lista h2 {
+    font-size: 1.875rem;
+  }
+  .foto-discos {
+    width: 18.75rem;
   }
 }
 /*Index*/

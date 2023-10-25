@@ -16,3 +16,13 @@
 
 /*Discografía*/
 
+@media (max-width: 900px){
+    .lista{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
+        ul{
+            display: none;
+        }
+    }
+}
