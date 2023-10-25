@@ -9,10 +9,6 @@ footer{
     width: 5rem
 }
 
-.tamaño-logo:hover{
-    transform: scale(1.1);
-}
-
 .logos-redes{
     display: flex;
     flex-wrap: wrap;
@@ -20,12 +16,12 @@ footer{
     padding-top: .9375rem;
 }
 
-    .nombre-logo{
-        font-family: 'Black Ops One', cursive;
-        color: $negro;
-        font-size: .9375rem;
-    }
-    
+.nombre-logo{
+    font-family: 'Black Ops One', cursive;
+    color: $negro;
+    font-size: .9375rem;
+}
+
 .logo-final{
     display: flex;
     flex-wrap: wrap;

@@ -27,3 +27,11 @@
         display: none;
     }
 }
+
+/*Integrantes*/
+
+@media (max-width: 870px){
+    .miembros{
+        flex-direction: column;
+    }
+}
