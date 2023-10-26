@@ -3,6 +3,9 @@
     a{
         img{
             width: 31.25rem;
+            border-style: groove;
+            border-radius: 10%;
+            color: $negro;
         }
     }
     div{
@@ -82,6 +85,3 @@
         }
     }
 }
-
-
-

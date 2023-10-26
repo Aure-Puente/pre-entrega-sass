@@ -3,7 +3,7 @@
     text-decoration: none;
     height: 3.75rem;
     width: 100%;
-    transition: height 1s;
+    transition: all 0.5s;
 }
 
 .noticia{
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     padding-top: .3125rem;
-    transition: font-size 1s;
+    transition: all 0.5s;
     -webkit-animation: shake-horizontal 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3 both;
 	animation: shake-horizontal 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3 both;
 }
@@ -77,9 +77,9 @@
 }
 
 .articulo:hover{
-    height: 5.625rem;
+    transform: scale(1.2);
 }
 
 .noticia:hover{
-    font-size: 3.125rem;
+    transform: scale(1.2);
 }

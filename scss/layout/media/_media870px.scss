@@ -1,16 +1,26 @@
-/*Index y Footer*/
+/*Artículo*/
 
 @media (max-width: 870px){
     .noticia{
         font-size: 1.5625rem;
         padding-top: .625rem;
     }
+}
+
+
+/*Index*/
+
+@media (max-width: 870px){
     .contenedor{
-        background-color: $blanco;
         flex-direction: column-reverse;
         a{
             img{
                 width: 31.25rem;
+                border-radius: 30%;
+                transition: all 0.5s;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
         }
         div{
@@ -20,18 +30,25 @@
         }
     }
     .titulo-contenedor{
-        margin-bottom: .3125rem;
         font-size: 3.4375rem;
-    }
-    .nombre-logo{
-        display: none;
+        padding: .625rem;
+        border-radius: 5%;
     }
 }
+
 
 /*Integrantes*/
 
 @media (max-width: 870px){
     .miembros{
         flex-direction: column;
+    }
+}
+
+/*Footer*/
+
+@media (max-width: 870px){
+    .nombre-logo{
+        display: none;
     }
 }

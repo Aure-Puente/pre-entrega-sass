@@ -1,4 +1,13 @@
-/* Header e Index*/
+/* Header*/
+
+@media (max-width: 450px){
+    .logoheader{
+        width: 18.75rem;
+    }
+}
+
+
+/*Index*/
 
 @media (max-width: 450px){
     .titulo-contenedor{
@@ -7,13 +16,16 @@
     .contenedor a img{
         width: 18.75rem;
     }
+}
+
+
+/*Footer*/
+
+@media (max-width: 450px){
     .tamaño-logo{
         width: 3.125rem;
     }
     .logo-final img{
         width: 5.625rem;
-    }
-    .logoheader{
-        width: 18.75rem;
     }
 }

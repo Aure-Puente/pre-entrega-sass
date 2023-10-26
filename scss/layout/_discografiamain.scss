@@ -35,6 +35,8 @@
 
 .foto-discos{
     width: 31.25rem;
+    border-style:solid;
+    border-color: $negro;
     -webkit-animation: flip-in-ver-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: flip-in-ver-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }

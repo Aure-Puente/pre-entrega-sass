@@ -1,12 +1,25 @@
-/*Navbar e Index*/
+/*Navbar*/
 
 @media (max-width: 1375px){
     .nav-link{
         font-size: 1.5625rem;
     }
+}
+
+
+/*Index*/
+
+@media (max-width: 1375px){
     .titulo-contenedor{
         background-color: #272829;
         color: #EAC050;
+    }
+    .contenedor{
+        a{
+            img{
+                border-radius: 20%
+            }
+        }
     }
     .contenedor-negro{
         div{
@@ -17,7 +30,6 @@
             }
         }
     }
-    
 }
 
 
