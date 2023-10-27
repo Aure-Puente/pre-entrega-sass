@@ -162,6 +162,9 @@ body {
   border-radius: 10%;
   color: #272829;
 }
+.contenedor div, .contenedor-negro div, .contenedor-gris div {
+  padding-left: 1.25rem;
+}
 .contenedor div p, .contenedor-negro div p, .contenedor-gris div p {
   font-family: "Archivo Black", sans-serif;
   color: #272829;
@@ -223,7 +226,7 @@ body {
 .contenedor-negro {
   background-color: #272829;
 }
-.contenedor-negro div a h1 {
+.contenedor-negro div h1 {
   color: #F2F2F2;
 }
 .contenedor-negro div p {
@@ -671,6 +674,7 @@ footer {
   }
   .d-flex {
     margin-bottom: 1.25rem;
+    padding-left: 1.875rem;
   }
 }
 /*Navbar*/
@@ -684,11 +688,13 @@ footer {
   .titulo-contenedor {
     background-color: #272829;
     color: #EAC050;
+    text-decoration: none;
+    padding-top: 0.3125rem;
   }
   .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
     border-radius: 20%;
   }
-  .contenedor-negro div a h1 {
+  .contenedor-negro div h1 {
     color: #EAC050;
   }
 }
@@ -739,6 +745,12 @@ footer {
     font-size: 1.25rem;
   }
 }
+/*Navbar*/
+@media (max-width: 1050px) {
+  .nav-link {
+    font-size: 1.125rem;
+  }
+}
 /*Singles*/
 @media (max-width: 1050px) {
   .texto-video {
@@ -750,18 +762,26 @@ footer {
 }
 /*Header y Navbar*/
 @media (max-width: 991px) {
-  #navbarSupportedContent {
+  .navbar-collapse {
     background-color: #272829;
   }
   .nav-link {
     color: #F2F2F2;
     padding-left: 1.25rem;
   }
+  .nav-link:hover {
+    transform: none;
+  }
   .container-fluid {
     flex-direction: row;
   }
   .logoheader {
     width: 37.5rem;
+    margin-left: 5rem;
+  }
+  .d-flex {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 /*Titulos*/
@@ -813,8 +833,10 @@ footer {
   }
   .titulo-contenedor {
     font-size: 3.4375rem;
-    padding: 0.625rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     border-radius: 5%;
+    margin-bottom: 1.25rem;
   }
 }
 /*Integrantes*/
@@ -895,6 +917,13 @@ footer {
   }
   .logo-final img {
     width: 6.875rem;
+  }
+}
+/*Navbar*/
+@media (max-width: 550px) {
+  .logoheader {
+    width: 18.75rem;
+    padding-left: 2.5rem;
   }
 }
 /*Titulo*/

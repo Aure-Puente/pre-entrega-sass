@@ -13,6 +13,8 @@
     .titulo-contenedor{
         background-color: #272829;
         color: #EAC050;
+        text-decoration: none;
+        padding-top: .3125rem;
     }
     .contenedor{
         a{
@@ -23,10 +25,8 @@
     }
     .contenedor-negro{
         div{
-            a{
-                h1{
-                    color: $amarillo;
-                }
+            h1{
+                color: $amarillo;
             }
         }
     }
