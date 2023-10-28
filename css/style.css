@@ -23,6 +23,7 @@ header {
 
 .logoheader {
   width: 37.5rem;
+  margin-left: 5rem;
 }
 
 /*Artículo*/
@@ -161,6 +162,10 @@ body {
   border-style: groove;
   border-radius: 10%;
   color: #272829;
+  transition: all 0.5s;
+}
+.contenedor a img:hover, .contenedor-negro a img:hover, .contenedor-gris a img:hover {
+  transform: scale(1.07);
 }
 .contenedor div, .contenedor-negro div, .contenedor-gris div {
   padding-left: 1.25rem;
@@ -342,6 +347,8 @@ body {
   }
 }
 .spotify {
+  border-top: groove;
+  border-color: #272829;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
@@ -350,6 +357,7 @@ body {
   color: #272829;
   font-size: 2.5rem;
   padding-top: 1.25rem;
+  color: negro;
 }
 
 /*Main Discografía*/
@@ -667,7 +675,7 @@ footer {
 }
 
 /*-----------------MEDIA QUERIES-------------------*/
-/*Navbar*/
+/*Header y Navbar*/
 @media (max-width: 1620px) {
   .container-fluid {
     flex-direction: column;
@@ -676,11 +684,20 @@ footer {
     margin-bottom: 1.25rem;
     padding-left: 1.875rem;
   }
+  .logoheader {
+    margin-left: 0%;
+  }
 }
 /*Navbar*/
 @media (max-width: 1375px) {
   .nav-link {
-    font-size: 1.5625rem;
+    font-size: 1.6875rem;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .form-control {
+    display: none;
   }
 }
 /*Index*/
@@ -707,12 +724,6 @@ footer {
   .spotialbum {
     padding-top: 1.25rem;
     width: 100%;
-  }
-}
-/*Navbar*/
-@media (max-width: 1170px) {
-  .nav-link {
-    font-size: 1.25rem;
   }
 }
 /*Artículo*/
@@ -745,12 +756,6 @@ footer {
     font-size: 1.25rem;
   }
 }
-/*Navbar*/
-@media (max-width: 1050px) {
-  .nav-link {
-    font-size: 1.125rem;
-  }
-}
 /*Singles*/
 @media (max-width: 1050px) {
   .texto-video {
@@ -768,6 +773,7 @@ footer {
   .nav-link {
     color: #F2F2F2;
     padding-left: 1.25rem;
+    font-size: 1.25rem;
   }
   .nav-link:hover {
     transform: none;
@@ -851,14 +857,18 @@ footer {
     display: none;
   }
 }
+/*Header*/
+@media (max-width: 776px) {
+  .logoheader {
+    width: 26.25rem;
+    margin-left: 3.4375rem;
+  }
+}
 /* Header*/
 @media (max-width: 700px) {
   header {
     border-style: groove;
     border-color: #272829;
-  }
-  .logoheader {
-    width: 26.25rem;
   }
 }
 /*Artículo*/
@@ -919,11 +929,11 @@ footer {
     width: 6.875rem;
   }
 }
-/*Navbar*/
-@media (max-width: 550px) {
+/*Header*/
+@media (max-width: 577px) {
   .logoheader {
     width: 18.75rem;
-    padding-left: 2.5rem;
+    margin-left: 2.8125rem;
   }
 }
 /*Titulo*/
@@ -943,8 +953,11 @@ footer {
 }
 /* Header*/
 @media (max-width: 450px) {
+  header {
+    background-image: none;
+  }
   .logoheader {
-    width: 18.75rem;
+    margin-left: 0%;
   }
 }
 /*Index*/
@@ -954,6 +967,15 @@ footer {
   }
   .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
     width: 18.75rem;
+  }
+}
+@media (max-width: 450px) {
+  .videos {
+    justify-content: center;
+  }
+  .videos iframe {
+    width: 21.875rem;
+    height: 18.75rem;
   }
 }
 /*Footer*/

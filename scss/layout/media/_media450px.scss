@@ -1,8 +1,11 @@
 /* Header*/
 
 @media (max-width: 450px){
+    header{
+        background-image: none;
+    }
     .logoheader{
-        width: 18.75rem;
+        margin-left: 0%;
     }
 }
 
@@ -18,6 +21,16 @@
     }
 }
 
+
+@media (max-width: 450px){
+    .videos{
+        justify-content: center;
+        iframe{
+            width: 21.875rem;
+            height: 18.75rem;
+        }
+    }
+}
 
 /*Footer*/
 

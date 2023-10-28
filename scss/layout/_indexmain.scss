@@ -6,6 +6,10 @@
             border-style: groove;
             border-radius: 10%;
             color: $negro;
+            transition: all 0.5s;
+            &:hover{
+                transform: scale(1.07);
+            }
         }
     }
     div{
