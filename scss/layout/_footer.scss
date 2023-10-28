@@ -1,38 +1,34 @@
 footer{
-    background-color: $gris;
-    border-style: groove;
-    border-color: #272829;
-    width: 100%;
+    background-color: map-get($map: $ColorFondo, $key: gris);
+    border-top: groove;
+    border-color: $negro;
+    padding-bottom: 3.125rem;
 }
 
-.tamaño-logo{
-    width: 5rem
-}
-
-.logos-redes{
+.logos{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: .9375rem;
+    padding-top: 2.5rem;
+    a{
+        transition: all 0.5s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
 }
 
-.nombre-logo{
-    font-family: 'Black Ops One', cursive;
-    color: $negro;
-    font-size: .9375rem;
-}
-
-.logo-final{
+.logofooter{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    padding-top: 1.25rem;
+    a{
+        img{
+            width: 9.375rem;
+        }
+    }
 }
 
-.logo-final img{
-    width: 9.375rem;
-}
-
-.logo-final img:hover{
+.logofooter img:hover{
     -webkit-animation: rotate-vert-center 0.5s ;
 	animation: rotate-vert-center 0.5s ;
 }
@@ -56,5 +52,20 @@ footer{
     100% {
         -webkit-transform: rotateY(360deg);
                 transform: rotateY(360deg);
+    }
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
+    a{
+        font-size: 1.5625rem;
+        padding: 1.25rem;
+        color: black;
+        font-family: 'Archivo Black', sans-serif;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }

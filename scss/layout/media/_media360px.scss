@@ -12,3 +12,28 @@
         }
     }
 }
+
+
+/*Footer*/
+
+@media (max-width: 360px){
+    .logos{
+        a{
+            img{
+                width: 2.5rem;
+            }
+        }
+    }
+    .logofooter{
+        a{
+            img{
+                width: 6.25rem;
+            }
+        }
+    }
+    .info{
+        a{
+            font-size: .9375rem;
+        }
+    }
+}

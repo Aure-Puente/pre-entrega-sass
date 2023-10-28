@@ -552,39 +552,33 @@ body {
 /*Footer*/
 footer {
   background-color: #ADB3B1;
-  border-style: groove;
+  border-top: groove;
   border-color: #272829;
-  width: 100%;
+  padding-bottom: 3.125rem;
 }
 
-.tamaño-logo {
-  width: 5rem;
-}
-
-.logos-redes {
+.logos {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 0.9375rem;
+  padding-top: 2.5rem;
+}
+.logos a {
+  transition: all 0.5s;
+}
+.logos a:hover {
+  transform: scale(1.2);
 }
 
-.nombre-logo {
-  font-family: "Black Ops One", cursive;
-  color: #272829;
-  font-size: 0.9375rem;
-}
-
-.logo-final {
+.logofooter {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  padding-top: 1.25rem;
 }
-
-.logo-final img {
+.logofooter a img {
   width: 9.375rem;
 }
 
-.logo-final img:hover {
+.logofooter img:hover {
   -webkit-animation: rotate-vert-center 0.5s;
   animation: rotate-vert-center 0.5s;
 }
@@ -609,6 +603,21 @@ footer {
     transform: rotateY(360deg);
   }
 }
+.info {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.25rem;
+}
+.info a {
+  font-size: 1.5625rem;
+  padding: 1.25rem;
+  color: black;
+  font-family: "Archivo Black", sans-serif;
+}
+.info a:hover {
+  transform: scale(1.1);
+}
+
 /*--------------------COMPONENT------------------*/
 /*Bootstrap*/
 /*Barra de Navegación*/
@@ -851,12 +860,6 @@ footer {
     flex-direction: column;
   }
 }
-/*Footer*/
-@media (max-width: 870px) {
-  .nombre-logo {
-    display: none;
-  }
-}
 /*Header*/
 @media (max-width: 776px) {
   .logoheader {
@@ -867,7 +870,7 @@ footer {
 /* Header*/
 @media (max-width: 700px) {
   header {
-    border-style: groove;
+    border-bottom: groove;
     border-color: #272829;
   }
 }
@@ -922,11 +925,17 @@ footer {
 }
 /*Footer*/
 @media (max-width: 700px) {
-  .tamaño-logo {
-    width: 4.0625rem;
+  .logos {
+    padding-top: 1.25rem;
   }
-  .logo-final img {
-    width: 6.875rem;
+  .logos a img {
+    width: 2.8125rem;
+  }
+  .logofooter a img {
+    width: 7.5rem;
+  }
+  .info a {
+    font-size: 1.25rem;
   }
 }
 /*Header*/
@@ -978,15 +987,6 @@ footer {
     height: 18.75rem;
   }
 }
-/*Footer*/
-@media (max-width: 450px) {
-  .tamaño-logo {
-    width: 3.125rem;
-  }
-  .logo-final img {
-    width: 5.625rem;
-  }
-}
 /*Productos*/
 @media (max-width: 370px) {
   .form {
@@ -1021,6 +1021,18 @@ footer {
   }
   .contenedor a img, .contenedor-gris a img, .contenedor-negro a img {
     width: 17.5rem;
+  }
+}
+/*Footer*/
+@media (max-width: 360px) {
+  .logos a img {
+    width: 2.5rem;
+  }
+  .logofooter a img {
+    width: 6.25rem;
+  }
+  .info a {
+    font-size: 0.9375rem;
   }
 }
 /*Index*/

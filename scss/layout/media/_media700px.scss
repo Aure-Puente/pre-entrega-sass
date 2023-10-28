@@ -2,8 +2,8 @@
 
 @media (max-width: 700px){
     header{
-        border-style: groove;
-        border-color: #272829;
+        border-bottom: groove;
+        border-color: $negro;
     }
 }
 
@@ -83,12 +83,24 @@
 /*Footer*/
 
 @media (max-width: 700px){
-    .tamaño-logo{
-        width: 4.0625rem;
+    .logos{
+        padding-top: 1.25rem;
+        a{
+            img{
+                width: 2.8125rem;
+            }
+        }
     }
-    .logo-final{
-        img{
-            width: 6.875rem;
+    .logofooter{
+        a{
+            img{
+                width: 7.5rem;
+            }
+        }
+    }
+    .info{
+        a{
+            font-size: 1.25rem;
         }
     }
 }
