@@ -10,6 +10,9 @@ footer{
     justify-content: space-evenly;
     padding-top: 2.5rem;
     a{
+        img{
+            width: 3.75rem;
+        }
         transition: all 0.5s;
         &:hover{
             transform: scale(1.2);

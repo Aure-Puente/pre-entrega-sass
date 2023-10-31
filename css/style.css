@@ -564,6 +564,9 @@ footer {
 .logos a {
   transition: all 0.5s;
 }
+.logos a img {
+  width: 3.75rem;
+}
 .logos a:hover {
   transform: scale(1.2);
 }
@@ -785,6 +788,7 @@ footer {
   }
   .nav-link:hover {
     transform: none;
+    color: #EAC050;
   }
   .container-fluid {
     flex-direction: row;
@@ -1024,6 +1028,9 @@ footer {
 }
 /*Footer*/
 @media (max-width: 360px) {
+  footer {
+    padding-bottom: 0%;
+  }
   .logos a img {
     width: 2.5rem;
   }
@@ -1031,7 +1038,8 @@ footer {
     width: 6.25rem;
   }
   .info a {
-    font-size: 0.9375rem;
+    font-size: 0.625rem;
+    padding-top: 0%;
   }
 }
 /*Index*/

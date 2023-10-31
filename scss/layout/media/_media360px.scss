@@ -17,6 +17,9 @@
 /*Footer*/
 
 @media (max-width: 360px){
+    footer{
+        padding-bottom: 0%;
+    }
     .logos{
         a{
             img{
@@ -33,7 +36,8 @@
     }
     .info{
         a{
-            font-size: .9375rem;
+            font-size: .625rem;
+            padding-top: 0%;
         }
     }
 }
